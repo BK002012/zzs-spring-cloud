@@ -1,0 +1,13 @@
+server:
+  port: 7003
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka:7001/eureka/,http://eureka2:7002/eureka/
+
+
