@@ -18,7 +18,6 @@
         <module>../microservice-mq</module>
         <module>../microservice-eureka3</module>
         <module>../microservice-eureka2</module>
-        <module>../microservice-eureka2</module>
     </modules>
 
     <packaging>pom</packaging>
