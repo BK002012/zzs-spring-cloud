@@ -24,7 +24,7 @@ public class LoginAction {
         if (!StringUtils.isEmpty(passport) && "123456".equals(password)) {
             //登陆成功，防止表单重复提交，可以重定向到主页
             session.setAttribute("loginUser", passport);
-            return "redirect:/homepage.html";
+            return "redirect:/homepage/list";
         } else {
             //登陆失败
             map.put("msg", "用户名密码错误");

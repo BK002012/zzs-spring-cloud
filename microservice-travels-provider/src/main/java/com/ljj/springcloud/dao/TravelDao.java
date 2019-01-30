@@ -1,7 +1,11 @@
 package com.ljj.springcloud.dao;
 
-import com.ljj.springcloud.pojo.dto.TravelDTO;
-import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface TravelDao extends JpaRepository<TravelDTO,Integer> {
+import com.ljj.springcloud.pojo.dto.TravelDTO;
+import com.ljj.springcloud.pojo.dto.PageDTO;
+
+import java.util.List;
+
+public interface TravelDao {
+    List<TravelDTO> list(PageDTO pageDTO);
 }
