@@ -2,11 +2,12 @@ package com.ljj.springcloud.web;
 
 import com.ljj.springcloud.dto.TravelDTO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.client.RestTemplate;
+
+import java.util.List;
 
 @Controller
 public class TravelsAction {
@@ -15,9 +16,9 @@ public class TravelsAction {
     @Autowired
     private RestTemplate restTemplate;
 
-    @ResponseBody
-    @GetMapping("/getTravelById/{id}")
-    public TravelDTO getTravelById(@PathVariable Integer id){
-        return restTemplate.getForObject(REST_URL_PREFIX+"/travels/"+id,TravelDTO.class);
+    @GetMapping("/travelClient/list")
+    public Page<TravelDTO> toHome(){
+
+        return restTemplate.getForObject(REST_URL_PREFIX+"/travels/list", Page.class);
     }
 }

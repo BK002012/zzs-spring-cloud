@@ -8,6 +8,9 @@ spring:
     url: jdbc:mysql://47.106.135.243:3306/silk?useUnicode=true&characterEncoding=utf8
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
+  #禁用模板引擎缓存
+  thymeleaf:
+    cache: false
 
     #jpa配置
   jpa:
