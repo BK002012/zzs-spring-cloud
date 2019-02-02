@@ -20,6 +20,9 @@
         <module>../microservice-eureka2</module>
         <module>../microservice-order-provider</module>
         <module>../microservice-order-consumer</module>
+        <module>../microservice-travels-consumer</module>
+        <module>../microservice-travels-provider</module>
+
     </modules>
 
     <packaging>pom</packaging>
