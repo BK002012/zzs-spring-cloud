@@ -25,5 +25,7 @@ public class TravelDTO {
     private String travelNoteStyle;
     @Column(name = "travelNotePrice")
     private double travelNotePrice;
+    @Column(name = "travelNoteDestination")
+    private String travelNoteDestination;
 
 }

@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface TravelService {
     List<TravelDTO> list(PageDTO pageDTO);
+
+    Long count();
 }

@@ -577,23 +577,24 @@
                     </div>
                 </div>
             </div>
-            <div class="tn-selected _j_tag_choose_container">
 
-
+            <!--游记列表-->
+            <div class="tn-selected _j_tag_choose_container" th:each="travel:${map['travels']}">
                 <div class="tn-item clearfix">
                     <div class="tn-image">
                         <a href="#" target="_blank">
-                            <img src=""/>
+                            <img th:src="${travel.travelNoteBanner}"/>
                         </a>
                     </div>
                     <div class="tn-wrapper">
                         <dl>
                             <dt>
-                                <a href="/i/8071413.html" target="_blank"></a>
+                                <a href="/i/8071413.html" target="_blank" th:text="${travel.travelNoteTitle}"></a>
                             </dt>
                             <dd>
                                 <a href="/i/8071413.html" target="_blank"
-                                   style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;">
+                                   style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;"
+                                   th:text="${travel.travelNoteTitle}">
 
                                 </a>
                             </dd>
@@ -608,7 +609,8 @@
                                 <i></i>
                                 <a class="_j_gs_item" href="javascript:void(0)"
                                    data-name="" data-objid="11214"
-                                   data-type="2"></a>
+                                   data-type="2"
+                                   th:text="${travel.travelNoteDestination}"></a>
                             </span>
                             <span class="tn-user">
                                 <a href="/u/80163810.html" target="_blank" rel="nofollow">
@@ -624,7 +626,23 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div align="right" class="m-pagination" id="_j_tn_pagination" data-type="0" data-objid="0">
+                <span class="count">共[[#{map['totalPage']}]]页 / [[#{map['total']}]]条</span>
 
+                <span class="pg-current">1</span>
+                <a class="pi _j_pageitem" href="javascript:;" data-page="2" rel="nofollow">2</a>
+                <a class="pi _j_pageitem" href="javascript:;" data-page="3" rel="nofollow">3</a>
+                <a class="pi _j_pageitem" href="javascript:;" data-page="4" rel="nofollow">4</a>
+                <a class="pi _j_pageitem" href="javascript:;" data-page="5" rel="nofollow">5</a>
+                <a class="pi _j_pageitem" href="javascript:;" data-page="6" rel="nofollow">6</a>
+                <a class="pi _j_pageitem" href="javascript:;" data-page="7" rel="nofollow">7</a>
+                <a class="pi _j_pageitem" href="javascript:;" data-page="8" rel="nofollow">8</a>
+                <a class="pi _j_pageitem" href="javascript:;" data-page="9" rel="nofollow">9</a>
+
+                <p th:case="${map['totalPage']}"><a th:href="@{/homepage/list/(pageNum=${map['totalPage']})}">下一页</a></p>
+                <p th:case="*"><a th:href="@{/homepage/list/(pageNum=${map['pageNum']+1})}">下一页</a></p>
+                <a class="pg-next _j_pageitem" href="javascript:;" data-page="2" rel="nofollow">下一页 &gt;&gt;</a>
             </div>
 
             <div id="pagelet-block-5fad2b09a1546ca40e2f94f8bee608a0" class=""

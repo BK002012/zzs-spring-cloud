@@ -8,4 +8,9 @@
         from travel_notes
         limit #{offset},#{pageSize}
     </select>
+
+    <select id="count" resultType="java.lang.Long">
+        select count(1)
+        from travel_notes
+    </select>
 </mapper>

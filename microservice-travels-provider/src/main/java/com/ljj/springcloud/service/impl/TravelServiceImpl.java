@@ -21,4 +21,9 @@ public class TravelServiceImpl implements TravelService {
         List<TravelDTO> list = travelDao.list(pageDTO);
         return list;
     }
+
+    @Override
+    public Long count() {
+        return travelDao.count();
+    }
 }

@@ -9,7 +9,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 public class TravelAction {
@@ -20,11 +22,19 @@ public class TravelAction {
 
     @ResponseBody
     @GetMapping("/travels/list")
-    public List<TravelDTO> find(@RequestParam Integer pageIndex, @RequestParam Integer pageSize) {
+    public Map<String,Object> find(@RequestParam Integer pageIndex, @RequestParam Integer pageSize) {
+        Map<String,Object> map = new HashMap<>();
+
         PageDTO pageDTO = new PageDTO();
         pageDTO.setPageIndex(pageIndex);
         pageDTO.setPageSize(pageSize);
-
-        return travelService.list(pageDTO);
+        List<TravelDTO> list = travelService.list(pageDTO);
+        map.put("travels",list);
+        Long total = travelService.count();
+        map.put("total",total);
+        //共有多少页
+        int totalPage = (int)Math.ceil(total / pageSize);
+        map.put("totalPage",totalPage);
+        return map;
     }
 }
