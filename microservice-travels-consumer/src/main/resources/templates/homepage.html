@@ -258,7 +258,7 @@
 
 <!-- zhangchu123 -->
 <div class="mfw-focus" id="_j_mfw_focus">
-    <div class="show-slider" id="_j_top_pic_container">
+    <div class="show-slider" id="_j_top_pic_container" style="height: 530px;">
         <ul class="show-image">
             <li class="first">
                 <a href="/i/11328250.html" target="_blank" class="show-pic"><img
@@ -627,8 +627,8 @@
                     </div>
                 </div>
             </div>
-            <div align="right" class="m-pagination" id="_j_tn_pagination" data-type="0" data-objid="0">
-                <span class="count">共[[#{map['totalPage']}]]页 / [[#{map['total']}]]条</span>
+            <div align="right" class="m-pagination" id="_j_tn_pagination" data-type="0" data-objid="0" th:switch="${map['pageNum']}">
+                <span class="count" th:inline="text">共[[${map['totalPage']}]]页 / [[${map['total']}]]条</span>
 
                 <span class="pg-current">1</span>
                 <a class="pi _j_pageitem" href="javascript:;" data-page="2" rel="nofollow">2</a>
@@ -641,8 +641,9 @@
                 <a class="pi _j_pageitem" href="javascript:;" data-page="9" rel="nofollow">9</a>
 
                 <p th:case="${map['totalPage']}"><a th:href="@{/homepage/list/(pageNum=${map['totalPage']})}">下一页</a></p>
-                <p th:case="*"><a th:href="@{/homepage/list/(pageNum=${map['pageNum']+1})}">下一页</a></p>
-                <a class="pg-next _j_pageitem" href="javascript:;" data-page="2" rel="nofollow">下一页 &gt;&gt;</a>
+                <p th:case="*"><a th:href="@{/homepage/list/(pageNum=${map['pageNum']+'1'})}">下一页</a></p>
+                <!--<a class="pg-next _j_pageitem" href="javascript:;" data-page="2" rel="nofollow">下一页 &gt;&gt;</a>-->
+
             </div>
 
             <div id="pagelet-block-5fad2b09a1546ca40e2f94f8bee608a0" class=""

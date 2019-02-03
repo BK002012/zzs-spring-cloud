@@ -26,4 +26,12 @@ public class TravelsAction {
         System.out.println(map);
         return "homepage";
     }
+
+    @GetMapping("/ttest")
+    public String list(Model model){
+        Map<String,Object> map = restTemplate.getForObject(REST_URL_PREFIX + "/travels/list?pageIndex=1&pageSize=10", Map.class);
+        model.addAttribute("map",map);
+        System.out.println(map);
+        return "homepage";
+    }
 }
