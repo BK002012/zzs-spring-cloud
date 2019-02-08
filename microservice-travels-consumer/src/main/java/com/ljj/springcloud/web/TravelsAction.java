@@ -19,19 +19,12 @@ public class TravelsAction {
     @Autowired
     private RestTemplate restTemplate;
 
-    @GetMapping("/homepage/list/{pageNum}")
-    public String list(Model model, @PathVariable(value = "1") Integer pageNum){
-        Map<String,Object> map = restTemplate.getForObject(REST_URL_PREFIX + "/travels/list?pageIndex=1&pageSize=10", Map.class);
-        model.addAttribute("map",map);
-        System.out.println(map);
-        return "homepage";
-    }
-
-    @GetMapping("/ttest")
+    @GetMapping("/homepage/list")
     public String list(Model model){
         Map<String,Object> map = restTemplate.getForObject(REST_URL_PREFIX + "/travels/list?pageIndex=1&pageSize=10", Map.class);
         model.addAttribute("map",map);
         System.out.println(map);
         return "homepage";
     }
+
 }
