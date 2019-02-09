@@ -13,4 +13,10 @@
         select count(1)
         from travel_notes
     </select>
+
+    <select id="travel" resultType="com.ljj.springcloud.pojo.dto.TravelDTO">
+        select *
+        from travel_notes
+        where id=#{id}
+    </select>
 </mapper>

@@ -10,4 +10,6 @@ public interface TravelDao {
     List<TravelDTO> list(PageDTO pageDTO);
 
     Long count();
+
+    TravelDTO travel(Integer id);
 }

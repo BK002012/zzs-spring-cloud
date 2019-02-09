@@ -4,11 +4,15 @@ import com.ljj.springcloud.pojo.dto.PageDTO;
 import com.ljj.springcloud.pojo.dto.TravelDTO;
 import com.ljj.springcloud.service.TravelService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.annotation.Resource;
+import javax.jms.*;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -18,7 +22,10 @@ public class TravelAction {
 
     @Autowired
     private TravelService travelService;
-
+    @Autowired
+    private JmsTemplate jmsTemplate;
+    @Resource
+    private Destination topicDestination;
 
     @ResponseBody
     @GetMapping("/travels/list")
@@ -36,5 +43,19 @@ public class TravelAction {
         int totalPage = (int)Math.ceil(total / pageSize);
         map.put("totalPage",totalPage);
         return map;
+    }
+
+    @ResponseBody
+    @GetMapping("/travels/travel")
+    public void travel() {
+        Integer id = 1;
+
+        jmsTemplate.send(topicDestination, new MessageCreator() {
+            @Override
+            public Message createMessage(Session session) throws JMSException {
+                TextMessage textMessage = session.createTextMessage(id + "");
+                return textMessage;
+            }
+        });
     }
 }

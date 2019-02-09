@@ -9,4 +9,6 @@ public interface TravelService {
     List<TravelDTO> list(PageDTO pageDTO);
 
     Long count();
+
+    TravelDTO travel(Integer id);
 }

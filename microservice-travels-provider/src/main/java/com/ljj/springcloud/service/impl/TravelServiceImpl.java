@@ -26,4 +26,9 @@ public class TravelServiceImpl implements TravelService {
     public Long count() {
         return travelDao.count();
     }
+
+    @Override
+    public TravelDTO travel(Integer id) {
+        return travelDao.travel(id);
+    }
 }

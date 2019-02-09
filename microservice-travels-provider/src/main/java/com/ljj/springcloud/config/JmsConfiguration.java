@@ -1,5 +1,7 @@
 package com.ljj.springcloud.config;
 
+import org.apache.activemq.command.ActiveMQTopic;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jms.annotation.EnableJms;
@@ -25,5 +27,11 @@ public class JmsConfiguration {
         DefaultJmsListenerContainerFactory bean = new DefaultJmsListenerContainerFactory();
         bean.setConnectionFactory(activeMQConnectionFactory);
         return bean;
+    }
+
+    @Bean
+    @ConfigurationProperties(prefix = "topicDestination")
+    public ActiveMQTopic activeMQTopic(){
+        return new ActiveMQTopic();
     }
 }
