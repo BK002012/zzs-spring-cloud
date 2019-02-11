@@ -4,6 +4,7 @@ import com.ljj.springcloud.pojo.dto.PageDTO;
 import com.ljj.springcloud.pojo.dto.TravelDTO;
 import com.ljj.springcloud.service.TravelService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Controller;
@@ -11,7 +12,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.annotation.Resource;
 import javax.jms.*;
 import java.util.HashMap;
 import java.util.List;
@@ -24,7 +24,8 @@ public class TravelAction {
     private TravelService travelService;
     @Autowired
     private JmsTemplate jmsTemplate;
-    @Resource
+    @Autowired
+    @Qualifier("topic")
     private Destination topicDestination;
 
     @ResponseBody

@@ -29,9 +29,8 @@ public class JmsConfiguration {
         return bean;
     }
 
-    @Bean
-    @ConfigurationProperties(prefix = "topicDestination")
-    public ActiveMQTopic activeMQTopic(){
-        return new ActiveMQTopic();
-    }
+//    @Bean
+//    public ActiveMQTopic activeMQTopic(){
+//        return new ActiveMQTopic();
+//    }
 }
