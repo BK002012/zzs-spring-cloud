@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>帐号登录 - 蜘蛛丝</title>
+    <meta property="mfw:partner-platform" content=""/>
+    <link href="login/css/mobile+css+omc+login-omc+login-omc^zly^1526627473.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="container container-login">
+        <a th:href="@{http://www.mafengwo.cn}" title="返回首页" class="logo">蜘蛛丝</a>
+
+        <div class="signup-forms flip">
+            <div class="login-box" id="_j_login_box">
+                <div class="inner inner_v2 clearfix">
+                    <div class="inner_v2_left">
+                        <p style="color: red" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
+                        <form action="login" method="post" id="_j_login_form">
+                            <div class="form-field">
+                                <input name="passport" type="text" placeholder="您的邮箱/手机号" autocomplete="off"
+                                       data-verification-name="帐号"
+                                       class="verification[required,maxSize[50],funcCall[checkShowCode]]" value=""/>
+                                <div class="err-tip"></div>
+                            </div>
+                            <div class="form-field">
+                                <input name="password" type="password" placeholder="您的密码" autocomplete="off"
+                                       data-verification-name="密码"
+                                       class="verification[required,minSize[4],maxSize[50]]"/>
+                                <div class="err-tip"></div>
+                            </div>
+                            <div class="form-link"><a href="/forget">忘记密码</a></div>
+                            <div class="submit-btn">
+                                <button type="submit">登 录</button>
+                            </div>
+                        </form>
+                        <div class="connect">
+                            <p class="hd">用合作网站账户直接登录</p>
+                            <div class="bd">
+                                <a href="/weibo" class="weibo"><i></i>新浪微博</a>
+                                <a href="/qq" class="qq"><i></i>QQ</a>
+                                <a href="/wechat" class="weixin"><i></i>微信</a>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner_v2_right">
+                        <img src="login/picture/code.jpg"/>
+                        <p>扫一扫<br/>下载蜘蛛丝APP</p>
+                    </div>
+                </div>
+                <div class="bottom-link">
+                    还没有帐号?<a href="#">马上注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="fullscreen-bg"
+     style="background-image: url(&quot;https://images.mafengwo.net/images/signup/wallpaper/45.jpg&quot;);"><img
+        src="https://images.mafengwo.net/images/signup/wallpaper/45.jpg&#10;"
+        style="width: 1349px; height: auto; margin-top: -309px;"/></div>
+
+
+</body>
+</html>

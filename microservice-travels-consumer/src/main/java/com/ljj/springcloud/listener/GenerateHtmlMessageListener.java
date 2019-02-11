@@ -23,7 +23,7 @@ public class GenerateHtmlMessageListener implements MessageListener {
     @Autowired
     private RestTemplate restTemplate;
 
-    @Autowired
+    @Autowired//每个自动注入的都应该有一个bean和它对应才能生效
     private FreeMarkerConfigurer freeMarkerConfigurer;
 
     @Override
@@ -43,7 +43,7 @@ public class GenerateHtmlMessageListener implements MessageListener {
             //3、生成静态页面
             Configuration configuration = freeMarkerConfigurer.getConfiguration();
             //获取模板
-            Template template = configuration.getTemplate("1.ftl");
+            Template template = configuration.getTemplate("ftl/1.ftl");
             //获取数据
             Map<String,Object> dataModel = new HashMap<>();
             dataModel.put("dto",travel);
