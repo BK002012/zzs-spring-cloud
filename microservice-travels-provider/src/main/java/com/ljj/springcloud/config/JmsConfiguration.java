@@ -28,9 +28,4 @@ public class JmsConfiguration {
         bean.setConnectionFactory(activeMQConnectionFactory);
         return bean;
     }
-
-//    @Bean
-//    public ActiveMQTopic activeMQTopic(){
-//        return new ActiveMQTopic();
-//    }
 }
