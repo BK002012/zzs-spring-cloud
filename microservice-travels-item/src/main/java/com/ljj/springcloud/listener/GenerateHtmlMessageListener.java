@@ -5,11 +5,13 @@ import com.ljj.springcloud.dto.TravelDTO;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
 
+import javax.annotation.PostConstruct;
 import javax.jms.Message;
 import javax.jms.MessageListener;
 import javax.jms.TextMessage;
@@ -27,6 +29,16 @@ public class GenerateHtmlMessageListener implements MessageListener {
 
     @Autowired//每个自动注入的都应该有一个bean和它对应才能生效
     private FreeMarkerConfigurer freeMarkerConfigurer;
+
+    public static GenerateHtmlMessageListener g;
+    public GenerateHtmlMessageListener(){}
+    @PostConstruct //通过@PostConstruct实现初始化bean之前进行的操作
+    public void init() {
+        g = this;
+        g.travelDao = this.travelDao;
+        g.freeMarkerConfigurer=this.freeMarkerConfigurer;
+        // 初使化时将已静态化的testService实例化
+    }
 
     @Override
     public void onMessage(Message message) {
@@ -46,9 +58,9 @@ public class GenerateHtmlMessageListener implements MessageListener {
              * 因此采取另一种思路，将模板专门放在另一个工程中，然后将生成的页面直接生成在客户端中
              * 可以避免客户端要调用业务层的尴尬
              */
-            TravelDTO travel = travelDao.travel(Integer.parseInt(id));
+            TravelDTO travel = g.travelDao.travel(Integer.parseInt(id));
             //3、生成静态页面
-            Configuration configuration = freeMarkerConfigurer.getConfiguration();
+            Configuration configuration = g.freeMarkerConfigurer.getConfiguration();
             //获取模板
             Template template = configuration.getTemplate("ftl/detail.ftl");
             //获取数据
