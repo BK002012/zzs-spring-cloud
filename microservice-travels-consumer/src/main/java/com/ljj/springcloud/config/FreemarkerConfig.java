@@ -8,6 +8,9 @@ import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
 public class FreemarkerConfig {
     @Bean
     public FreeMarkerConfigurer freeMarkerConfigurer(){
-        return new FreeMarkerConfigurer();
+        FreeMarkerConfigurer freeMarkerConfigurer = new FreeMarkerConfigurer();
+        freeMarkerConfigurer.setTemplateLoaderPath("classpath:/templates");
+        freeMarkerConfigurer.setDefaultEncoding("UTF-8");
+        return freeMarkerConfigurer;
     }
 }

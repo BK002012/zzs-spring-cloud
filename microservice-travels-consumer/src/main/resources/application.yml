@@ -53,7 +53,7 @@ spring:
     expose-session-attributes: false
     expose-spring-macro-helpers: false
     suffix: .ftl
-    template-loader-path: classpath:/templates/ftl
+    template-loader-path: classpath:/templates
 eureka:
   client:
     service-url:

@@ -26,7 +26,7 @@ public class TravelAction {
     private JmsTemplate jmsTemplate;
     //使用名称注入
     @Autowired
-    @Qualifier("topic")
+    @Qualifier("topicDestination")
     private Destination topicDestination;
 
     @ResponseBody
