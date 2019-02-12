@@ -22,6 +22,7 @@
         <module>../microservice-order-consumer</module>
         <module>../microservice-travels-consumer</module>
         <module>../microservice-travels-provider</module>
+        <module>../microservice-travels-item</module>
 
     </modules>
 

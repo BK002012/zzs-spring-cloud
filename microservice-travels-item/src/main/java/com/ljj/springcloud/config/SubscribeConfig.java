@@ -2,14 +2,11 @@ package com.ljj.springcloud.config;
 
 import com.ljj.springcloud.listener.GenerateHtmlMessageListener;
 import org.apache.activemq.ActiveMQConnectionFactory;
-import org.apache.activemq.command.ActiveMQQueue;
 import org.apache.activemq.command.ActiveMQTopic;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jms.connection.SingleConnectionFactory;
 import org.springframework.jms.listener.DefaultMessageListenerContainer;
-
-import javax.jms.Destination;
 
 @Configuration
 public class SubscribeConfig {
