@@ -39,14 +39,18 @@ public class GenerateHtmlMessageListener implements MessageListener {
 
             }
             //2、查询对象
-            TravelDTO travel = restTemplate.getForObject(REST_URL_PREFIX+"/travels/travel", TravelDTO.class);
+            /**
+             * listener中restTemplate取出的数据是空的，难道是因为reTemplate的数据已经在action中取出来了吗？
+             */
+//            TravelDTO travel = restTemplate.getForObject(REST_URL_PREFIX+"/travels/travel", TravelDTO.class);
+            Map<String, Object> map = restTemplate.getForObject(REST_URL_PREFIX + "/travels/list?pageIndex=1&pageSize=10", Map.class);
             //3、生成静态页面
             Configuration configuration = freeMarkerConfigurer.getConfiguration();
             //获取模板
             Template template = configuration.getTemplate("ftl/1.ftl");
             //获取数据
             Map<String,Object> dataModel = new HashMap<>();
-            dataModel.put("dto",travel);
+            dataModel.put("dto",map);
             //输出到本地
             Writer out  = new FileWriter("E:/project/zzs-spring-cloud/microservice-travels-consumer/src/main/resources/templates/"+id+".html");
             template.process(dataModel,out);
@@ -54,6 +58,5 @@ public class GenerateHtmlMessageListener implements MessageListener {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 }

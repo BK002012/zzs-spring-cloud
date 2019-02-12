@@ -6,6 +6,6 @@
 </head>
 <body>
 FreeMarker模板引擎
-<h1>${travel.travelNoteTitle}</h1>
+<h1>${dto}</h1>
 </body>
 </html>

@@ -48,8 +48,8 @@ public class TravelAction {
     }
 
     @ResponseBody
-    @GetMapping("/travels/travel")
-    public void travel() {
+    @GetMapping("/travel")
+    public void travelTest() {
         Integer id = 1;
 
         jmsTemplate.send(topicDestination, new MessageCreator() {
@@ -59,5 +59,16 @@ public class TravelAction {
                 return textMessage;
             }
         });
+    }
+
+    /**
+     * 返回对象
+     * @return
+     */
+    @ResponseBody
+    @GetMapping("/travels/travel")
+    public TravelDTO travel() {
+        Integer id = 1;
+        return travelService.travel(id);
     }
 }

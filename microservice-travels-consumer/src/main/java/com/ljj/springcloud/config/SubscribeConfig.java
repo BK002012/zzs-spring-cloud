@@ -40,8 +40,7 @@ public class SubscribeConfig {
         //注入连接工厂
         m.setConnectionFactory(connectionFactory());
         //注入目标对象
-        Destination d = new ActiveMQQueue("*");//*表示通配所有队列名称
-        m.setDestination(d);
+        m.setDestination(topicDestination());
         //注入自定义的消息监听器
         m.setMessageListener(new GenerateHtmlMessageListener());
         return m;
