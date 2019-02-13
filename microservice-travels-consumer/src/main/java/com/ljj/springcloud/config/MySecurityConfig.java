@@ -24,9 +24,9 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
                 //2.  index.html  a th:href="@{/userlogin}" GET
                 //3.  login.html  form th:action="@{/userlogin}" method="POST"
                 //4.  IndexAction.java GetMapping("/userlogin")
-                .formLogin().usernameParameter("passport").passwordParameter("password").loginPage("/userlogin")
+                .formLogin().usernameParameter("passport").passwordParameter("password").loginPage("/login")
                 .and()
-                //登出页面需要post请求，因此
+                //登出页面需要post请求
                 .logout().logoutSuccessUrl("/")
                 .and()
                 .rememberMe().rememberMeParameter("rememberMe");
