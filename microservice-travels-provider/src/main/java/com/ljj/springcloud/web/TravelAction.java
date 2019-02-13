@@ -38,11 +38,16 @@ public class TravelAction {
         pageDTO.setPageIndex(pageIndex);
         pageDTO.setPageSize(pageSize);
         List<TravelDTO> list = travelService.list(pageDTO);
+        //各个游记内容
         map.put("travels",list);
         Long total = travelService.count();
+        //共有多少个游记
         map.put("total",total);
         //共有多少页
-        int totalPage = (int)Math.ceil(total / pageSize);
+        int totalPage = (int)Math.ceil(total*1.0 / pageSize);
+        //当前页
+        map.put("pageIndex",pageIndex);
+
         map.put("totalPage",totalPage);
         return map;
     }

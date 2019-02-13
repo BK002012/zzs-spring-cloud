@@ -27,11 +27,14 @@
         ]]>
     </script>
 
+
     <link href="/homepage/css/css+mfw-header.2015^ylvs^1527308432.css" rel="stylesheet" type="text/css"/>
 
     <link href="/homepage/css/css+hotel+datepicker-range^zfm^1525846268.css" rel="stylesheet" type="text/css"/>
     <script language="javascript" src="/homepage/js/js+advert+inspector^alw^1536006240.js" type="text/javascript"
             crossorigin="anonymous"></script>
+
+
 </head>
 <body>
 
@@ -115,8 +118,11 @@
 
                 <div class="login-info" sec:authorize="!isAuthenticated()">
                     <div class="head-user" id="_j_head_user">
-                        <a class="drop-trigger" href="http://www.mafengwo.cn/u/51882260.html" title="Lydia的窝" rel="nofollow">
-                            <div class="user-image"><img src="http://b4-q.mafengwo.net/s11/M00/9E/87/wKgBEFxKobGAYm03AAAQXBGb6eI88.jpeg?imageMogr2%2Fthumbnail%2F%2132x32r%2Fgravity%2FCenter%2Fcrop%2F%2132x32%2Fquality%2F90" height="32" width="32" alt="Lydia的窝"/></div>
+                        <a class="drop-trigger" href="http://www.mafengwo.cn/u/51882260.html" title="Lydia的窝"
+                           rel="nofollow">
+                            <div class="user-image"><img
+                                    src="http://b4-q.mafengwo.net/s11/M00/9E/87/wKgBEFxKobGAYm03AAAQXBGb6eI88.jpeg?imageMogr2%2Fthumbnail%2F%2132x32r%2Fgravity%2FCenter%2Fcrop%2F%2132x32%2Fquality%2F90"
+                                    height="32" width="32" alt="Lydia的窝"/></div>
                             <i class="icon-caret-down"></i>
                         </a>
                     </div>
@@ -126,13 +132,15 @@
                             <span class="head-msg-new hide" style="display: none;">3</span>
                         </form>
                         <!--<a th:href="@{/logout}">-->
-                            <!--退出-->
-                            <!--<span class="head-msg-new hide" style="display: none;">3</span>-->
+                        <!--退出-->
+                        <!--<span class="head-msg-new hide" style="display: none;">3</span>-->
                         <!--</a>-->
                     </div>
                     <div class="head-daka ">
-                        <a class="btn head-btn-daka" href="javascript:" rel="nofollow" id="head-btn-daka" title="打卡" data-japp="daka">打卡</a>
-                        <a class="btn-active head-btn-daka" href="javascript:" rel="nofollow" id="head-btn-daka-active" title="打卡推荐" data-japp="daka">打卡推荐</a>
+                        <a class="btn head-btn-daka" href="javascript:" rel="nofollow" id="head-btn-daka" title="打卡"
+                           data-japp="daka">打卡</a>
+                        <a class="btn-active head-btn-daka" href="javascript:" rel="nofollow" id="head-btn-daka-active"
+                           title="打卡推荐" data-japp="daka">打卡推荐</a>
                     </div>
                 </div>
 
@@ -664,22 +672,27 @@
             <div align="right" class="m-pagination" id="_j_tn_pagination" data-type="0" data-objid="0"
                  th:switch="${map['pageNum']}">
                 <span class="count" th:inline="text">共[[${map['totalPage']}]]页 / [[${map['total']}]]条</span>
+                <!--上一页-->
+                <a class="pg-prev _j_pageitem" th:if="${map['pageIndex']} ne '1'" th:href="@{/homepage/list(pageIndex=${map['pageIndex']}-1)}">&lt;&lt; 上一页</a>
+                <!--当前页-->
+                <a class="pi _j_pageitem" th:if="${map['pageIndex']} gt 3" th:href="@{/homepage/list(pageIndex=${map['pageIndex']}-3)}" th:inline="text">[[${map['pageIndex']}-3]]</a>
+                <a class="pi _j_pageitem" th:if="${map['pageIndex']} gt 2" th:href="@{/homepage/list(pageIndex=${map['pageIndex']}-2)}" th:inline="text">[[${map['pageIndex']}-2]]</a>
+                <a class="pi _j_pageitem" th:if="${map['pageIndex']} gt 1" th:href="@{/homepage/list(pageIndex=${map['pageIndex']}-1)}" th:inline="text">[[${map['pageIndex']}-1]]</a>
+                <span class="pg-current" th:inline="text">[[${map['pageIndex']}]]</span>
+                <a class="pi _j_pageitem" th:if="${map['pageIndex']} lt ${map['totalPage']}-1" th:href="@{/homepage/list(pageIndex=${map['pageIndex']}+1)}" th:inline="text">[[${map['pageIndex']}+1]]</a>
+                <a class="pi _j_pageitem" th:if="${map['pageIndex']} lt ${map['totalPage']}-2" th:href="@{/homepage/list(pageIndex=${map['pageIndex']}+2)}" th:inline="text">[[${map['pageIndex']}+2]]</a>
+                <a class="pi _j_pageitem" th:if="${map['pageIndex']} lt ${map['totalPage']}-3" th:href="@{/homepage/list(pageIndex=${map['pageIndex']}+3)}" th:inline="text">[[${map['pageIndex']}+3]]</a>
+                <!--下一页-->
+                <a class="pg-next _j_pageitem" th:if="${map['pageIndex']} ne ${map['totalPage']}" th:href="@{/homepage/list(pageIndex=${map['pageIndex']}+1)}" >下一页 &gt;&gt;</a>
 
-                <span class="pg-current">1</span>
-                <a class="pi _j_pageitem" href="javascript:;" data-page="2" rel="nofollow">2</a>
-                <a class="pi _j_pageitem" href="javascript:;" data-page="3" rel="nofollow">3</a>
-                <a class="pi _j_pageitem" href="javascript:;" data-page="4" rel="nofollow">4</a>
-                <a class="pi _j_pageitem" href="javascript:;" data-page="5" rel="nofollow">5</a>
-                <a class="pi _j_pageitem" href="javascript:;" data-page="6" rel="nofollow">6</a>
-                <a class="pi _j_pageitem" href="javascript:;" data-page="7" rel="nofollow">7</a>
-                <a class="pi _j_pageitem" href="javascript:;" data-page="8" rel="nofollow">8</a>
-                <a class="pi _j_pageitem" href="javascript:;" data-page="9" rel="nofollow">9</a>
-
-                <p th:case="${map['totalPage']}"><a th:href="@{/homepage/list/(pageNum=${map['totalPage']})}">下一页</a>
-                </p>
-                <p th:case="*"><a th:href="@{/homepage/list/(pageNum=${map['pageNum']+'1'})}">下一页</a></p>
-                <!--<a class="pg-next _j_pageitem" href="javascript:;" data-page="2" rel="nofollow">下一页 &gt;&gt;</a>-->
-
+                <!--页面跳转-->
+                <input id="go-input" type="text" th:value="${map['pageIndex']}"/>
+                <a class="pg-next _j_pageitem" id="go">go</a>
+                <script>
+                    $('#go').click(function () {
+                        location.href="/homepage/list?pageIndex="+$('#go-input').val();
+                    })
+                </script>
             </div>
 
             <div id="pagelet-block-5fad2b09a1546ca40e2f94f8bee608a0" class=""
