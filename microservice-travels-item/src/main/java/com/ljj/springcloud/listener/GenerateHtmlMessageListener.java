@@ -62,7 +62,7 @@ public class GenerateHtmlMessageListener implements MessageListener {
             //3、生成静态页面
             Configuration configuration = g.freeMarkerConfigurer.getConfiguration();
             //获取模板
-            Template template = configuration.getTemplate("ftl/detail.ftl");
+            Template template = configuration.getTemplate("ftl/1.ftl");
             //获取数据
             Map<String,Object> dataModel = new HashMap<>();
             dataModel.put("dto",travel);

@@ -17,20 +17,14 @@ public class LoginAction {
     @Autowired
     private RestTemplate restTemplate;
 
-    @PostMapping("/login")
-    public String login(@RequestParam("passport") String passport,
-                        @RequestParam("password") String password,
-                        Map<String, Object> map, HttpSession session) {
-        if (!StringUtils.isEmpty(passport) && "123456".equals(password)) {
-            //登陆成功，防止表单重复提交，可以重定向到主页
-            session.setAttribute("loginUser", passport);
-            return "redirect:/homepage/list";
-        } else {
-            //登陆失败
-            map.put("msg", "用户名密码错误");
-            return "login";
-        }
+    @GetMapping("/")
+    public String index(){
+        return "homepage";
+    }
 
+    @PostMapping("/userlogin")
+    public String login() {
+        return "login";
     }
 
     @ResponseBody

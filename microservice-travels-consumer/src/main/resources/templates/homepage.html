@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>旅游攻略,自由行,自助游攻略,旅游社交分享网站 - 蜘蛛丝</title>
@@ -111,6 +112,38 @@
                 </li>
                 <li class="head-nav-app" data-cs-p="app"><a href="https://www.mafengwo.cn/app/intro/gonglve.php"
                                                             title="APP">APP</a></li>
+
+                <div class="login-info" sec:authorize="!isAuthenticated()">
+                    <div class="head-user" id="_j_head_user">
+                        <a class="drop-trigger" href="http://www.mafengwo.cn/u/51882260.html" title="Lydia的窝" rel="nofollow">
+                            <div class="user-image"><img src="http://b4-q.mafengwo.net/s11/M00/9E/87/wKgBEFxKobGAYm03AAAQXBGb6eI88.jpeg?imageMogr2%2Fthumbnail%2F%2132x32r%2Fgravity%2FCenter%2Fcrop%2F%2132x32%2Fquality%2F90" height="32" width="32" alt="Lydia的窝"/></div>
+                            <i class="icon-caret-down"></i>
+                        </a>
+                    </div>
+                    <div class="head-msg" id="_j_head_msg">
+                        <form action="#" th:action="@{/logout}" method="post">
+                            退出
+                            <span class="head-msg-new hide" style="display: none;">3</span>
+                        </form>
+                        <!--<a th:href="@{/logout}">-->
+                            <!--退出-->
+                            <!--<span class="head-msg-new hide" style="display: none;">3</span>-->
+                        <!--</a>-->
+                    </div>
+                    <div class="head-daka ">
+                        <a class="btn head-btn-daka" href="javascript:" rel="nofollow" id="head-btn-daka" title="打卡" data-japp="daka">打卡</a>
+                        <a class="btn-active head-btn-daka" href="javascript:" rel="nofollow" id="head-btn-daka-active" title="打卡推荐" data-japp="daka">打卡推荐</a>
+                    </div>
+                </div>
+
+                <div class="login-out" sec:authorize="isAuthenticated()">
+                    <a class="weibo-login" href="https://passport.mafengwo.cn/weibo" title="微博登录" rel="nofollow"></a>
+                    <a class="qq-login" href="https://passport.mafengwo.cn/qq" title="QQ登录" rel="nofollow"></a>
+                    <a class="weixin-login" href="https://passport.mafengwo.cn/wechat" title="微信登录" rel="nofollow"></a>
+                    <a id="_j_showlogin" title="登录蜘蛛丝" href="https://passport.mafengwo.cn" rel="nofollow">登录</a><span
+                        class="split">|</span><a href="https://passport.mafengwo.cn/regist.html" title="注册帐号"
+                                                 rel="nofollow">注册</a>
+                </div>
             </ul>
             <div class="head-search" data-online="1">
                 <div class="head-search-wrapper">
@@ -611,7 +644,7 @@
                                    data-name="" data-objid="11214"
                                    data-type="2"
                                    th:inline="text"
-                                   >[[${travel.travelNoteDestination}]],by</a>
+                                >[[${travel.travelNoteDestination}]],by</a>
                             </span>
                             <span class="tn-user">
                                 <a href="/u/80163810.html" target="_blank" rel="nofollow">
@@ -628,7 +661,8 @@
                     </div>
                 </div>
             </div>
-            <div align="right" class="m-pagination" id="_j_tn_pagination" data-type="0" data-objid="0" th:switch="${map['pageNum']}">
+            <div align="right" class="m-pagination" id="_j_tn_pagination" data-type="0" data-objid="0"
+                 th:switch="${map['pageNum']}">
                 <span class="count" th:inline="text">共[[${map['totalPage']}]]页 / [[${map['total']}]]条</span>
 
                 <span class="pg-current">1</span>
@@ -641,7 +675,8 @@
                 <a class="pi _j_pageitem" href="javascript:;" data-page="8" rel="nofollow">8</a>
                 <a class="pi _j_pageitem" href="javascript:;" data-page="9" rel="nofollow">9</a>
 
-                <p th:case="${map['totalPage']}"><a th:href="@{/homepage/list/(pageNum=${map['totalPage']})}">下一页</a></p>
+                <p th:case="${map['totalPage']}"><a th:href="@{/homepage/list/(pageNum=${map['totalPage']})}">下一页</a>
+                </p>
                 <p th:case="*"><a th:href="@{/homepage/list/(pageNum=${map['pageNum']+'1'})}">下一页</a></p>
                 <!--<a class="pg-next _j_pageitem" href="javascript:;" data-page="2" rel="nofollow">下一页 &gt;&gt;</a>-->
 

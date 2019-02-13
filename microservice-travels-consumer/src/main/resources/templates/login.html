@@ -18,7 +18,7 @@
                 <div class="inner inner_v2 clearfix">
                     <div class="inner_v2_left">
                         <p style="color: red" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
-                        <form action="login" method="post" id="_j_login_form">
+                        <form th:action="@{userlogin}" method="post" id="_j_login_form">
                             <div class="form-field">
                                 <input name="passport" type="text" placeholder="您的邮箱/手机号" autocomplete="off"
                                        data-verification-name="帐号"
@@ -30,6 +30,10 @@
                                        data-verification-name="密码"
                                        class="verification[required,minSize[4],maxSize[50]]"/>
                                 <div class="err-tip"></div>
+                            </div>
+                            <div style="width: 320px;margin: 0 auto;padding-top: 10px;">
+                                <input align="center" style="border: 1px solid #d8d8d8;border-radius: 4px;line-height: 28px;padding: 6px 0 6px 12px;box-shadow: 0 0 5px #fff;" type="checkbox" name="rememberMe"/>&nbsp;&nbsp;
+                                <span style="font-size: 14px;">记住我</span>
                             </div>
                             <div class="form-link"><a href="/forget">忘记密码</a></div>
                             <div class="submit-btn">
