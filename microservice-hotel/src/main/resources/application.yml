@@ -1,5 +1,5 @@
 server:
-  port: 8090
+  port: 8091
 
 spring:
   datasource:
@@ -44,6 +44,9 @@ spring:
       broker-url: tcp://47.101.169.146:61616
   #    是否启用内存模式
       in-memory: false
+  thymeleaf:
+#    mode: LEGACYHTML5
+    cache: false
 
 eureka:
   client:
@@ -54,4 +57,7 @@ eureka:
 mybatis:
   config-location: classpath:mybatis/mybatis-config.xml
   mapper-locations: classpath:mybatis/mapper/*.xml
+
+
+
 
