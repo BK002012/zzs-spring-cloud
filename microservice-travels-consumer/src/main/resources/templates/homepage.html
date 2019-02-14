@@ -116,7 +116,7 @@
                 <li class="head-nav-app" data-cs-p="app"><a href="https://www.mafengwo.cn/app/intro/gonglve.php"
                                                             title="APP">APP</a></li>
 
-                <div class="login-info" sec:authorize="!isAuthenticated()">
+                <div class="login-info" sec:authorize="isAuthenticated()">
                     <div class="head-user" id="_j_head_user">
                         <a class="drop-trigger" href="http://www.mafengwo.cn/u/51882260.html" title="Lydia的窝"
                            rel="nofollow">
@@ -144,7 +144,7 @@
                     </div>
                 </div>
 
-                <div class="login-out" sec:authorize="isAuthenticated()">
+                <div class="login-out" sec:authorize="!isAuthenticated()">
                     <a class="weibo-login" href="https://passport.mafengwo.cn/weibo" title="微博登录" rel="nofollow"></a>
                     <a class="qq-login" href="https://passport.mafengwo.cn/qq" title="QQ登录" rel="nofollow"></a>
                     <a class="weixin-login" href="https://passport.mafengwo.cn/wechat" title="微信登录" rel="nofollow"></a>

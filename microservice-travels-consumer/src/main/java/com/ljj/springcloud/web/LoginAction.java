@@ -17,12 +17,7 @@ public class LoginAction {
     @Autowired
     private RestTemplate restTemplate;
 
-    @GetMapping("/")
-    public String index(){
-        return "homepage";
-    }
-
-    @PostMapping("/login")
+    @GetMapping("/login")
     public String login(@RequestParam("passport") String passport,
                         @RequestParam("password") String password,
                         Map<String, Object> map, HttpSession session) {
