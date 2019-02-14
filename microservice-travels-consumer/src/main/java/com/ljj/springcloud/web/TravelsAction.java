@@ -17,6 +17,11 @@ public class TravelsAction {
     @Autowired
     private RestTemplate restTemplate;
 
+    @GetMapping("/")
+    public String test(){
+        return "redirect:/homepage/list";
+    }
+
     @GetMapping("/homepage/list")
     public String list(Model model ,@RequestParam(defaultValue = "1") String pageIndex) {
 
