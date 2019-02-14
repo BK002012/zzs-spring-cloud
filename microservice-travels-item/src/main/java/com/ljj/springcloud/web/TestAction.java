@@ -8,6 +8,6 @@ public class TestAction {
 
     @GetMapping("/test")
     public String test(){
-        return "ftl/1";
+        return "ftl/detail";
     }
 }

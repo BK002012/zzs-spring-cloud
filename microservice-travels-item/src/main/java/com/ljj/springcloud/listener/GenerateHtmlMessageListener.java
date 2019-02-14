@@ -53,11 +53,6 @@ public class GenerateHtmlMessageListener implements MessageListener {
 
             }
             //2、查询对象
-            /**
-             * listener中restTemplate取出的数据是空的，难道是因为reTemplate的数据已经在action中取出来了吗？
-             * 因此采取另一种思路，将模板专门放在另一个工程中，然后将生成的页面直接生成在客户端中
-             * 可以避免客户端要调用业务层的尴尬
-             */
             TravelDTO travel = g.travelDao.travel(Integer.parseInt(id));
             //3、生成静态页面
             Configuration configuration = g.freeMarkerConfigurer.getConfiguration();
