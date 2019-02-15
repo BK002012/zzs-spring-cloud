@@ -41,7 +41,7 @@ spring:
       pub-sub-domain: true
     #  activemq地址
     activemq:
-      broker-url: tcp://47.101.169.146:61616
+      broker-url: tcp://106.12.210.85:61616
       #    是否启用内存模式
       in-memory: false
   thymeleaf:
