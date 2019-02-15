@@ -17,14 +17,14 @@ public class TravelServiceImpl implements TravelService {
     private TravelDao travelDao;
 
     @Override
-    public List<TravelDTO> list(PageDTO pageDTO) {
-        List<TravelDTO> list = travelDao.list(pageDTO);
+    public List<TravelDTO> list(PageDTO pageDTO,String search) {
+        List<TravelDTO> list = travelDao.list(pageDTO.getOffset(),pageDTO.getPageSize(),search);
         return list;
     }
 
     @Override
-    public Long count() {
-        return travelDao.count();
+    public Long count(String search) {
+        return travelDao.count(search);
     }
 
     @Override

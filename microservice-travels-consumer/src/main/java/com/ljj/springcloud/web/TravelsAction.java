@@ -22,10 +22,11 @@ public class TravelsAction {
         return "redirect:/homepage/list";
     }
 
-    @GetMapping("/homepage/list")
-    public String list(Model model ,@RequestParam(defaultValue = "1") String pageIndex) {
+    @GetMapping("/homepage/list")//http://localhost:8090/travels/list?pageIndex=1&pageSize=10&search=沈阳
+    public String list(Model model ,@RequestParam(defaultValue = "1") String pageIndex,@RequestParam(defaultValue = "") String search) {
+        System.out.println(search);
 
-        Map<String, Object> map= restTemplate.getForObject(REST_URL_PREFIX + "/travels/list?pageIndex="+Integer.parseInt(pageIndex)+"&pageSize=10", Map.class);
+        Map<String, Object> map= restTemplate.getForObject(REST_URL_PREFIX + "/travels/list?pageIndex="+Integer.parseInt(pageIndex)+"&pageSize=10&search="+search, Map.class);
 
         model.addAttribute("map", map);
         System.out.println(map);
