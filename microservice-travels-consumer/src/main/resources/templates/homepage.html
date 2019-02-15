@@ -408,16 +408,20 @@
                 </ul>
             </div>
             <!-- 全部 begin -->
+            <!--搜索框-->
             <div class="searchbar" id="_j_index_search_bar_all">
-                <div class="search-wrapper">
-                    <div class="search-input">
-                        <input name="q" type="text" placeholder="搜目的地/攻略/酒店/旅行特价" id="_j_index_search_input_all"
-                               autocomplete="off"/>
+                <form action="/homepage/list">
+                    <div class="search-wrapper">
+                        <div class="search-input">
+                            <input name="search" type="text" placeholder="搜游记" id="_j_index_search_input_all"
+                                   autocomplete="off" th:value="${map['search']}"/>
+                        </div>
                     </div>
-                </div>
-                <div class="search-button" id="_j_index_search_btn_all">
-                    <a role="button" href="javascript:"><i class="icon-search"></i></a>
-                </div>
+                    <div class="search-button" id="_j_index_search_btn_all">
+                        <input role="button" class="icon-search" type="submit"/>
+                        <!--<a role="button" href="javascript:"><i class="icon-search"></i></a>-->
+                    </div>
+                </form>
             </div>
             <!-- 全部 end -->
             <!-- 酒店 begin -->
@@ -669,24 +673,32 @@
                  th:switch="${map['pageNum']}">
                 <span class="count" th:inline="text">共[[${map['totalPage']}]]页 / [[${map['total']}]]条</span>
                 <!--上一页-->
-                <a class="pg-prev _j_pageitem" th:if="${map['pageIndex']} ne '1'" th:href="@{/homepage/list(pageIndex=${map['pageIndex']}-1)}">&lt;&lt; 上一页</a>
+                <a class="pg-prev _j_pageitem" th:if="${map['pageIndex']} ne '1'"
+                   th:href="@{/homepage/list(pageIndex=${map['pageIndex']}-1,search=${map['search']})}">&lt;&lt; 上一页</a>
                 <!--当前页-->
-                <a class="pi _j_pageitem" th:if="${map['pageIndex']} gt 3" th:href="@{/homepage/list(pageIndex=${map['pageIndex']}-3)}" th:inline="text">[[${map['pageIndex']}-3]]</a>
-                <a class="pi _j_pageitem" th:if="${map['pageIndex']} gt 2" th:href="@{/homepage/list(pageIndex=${map['pageIndex']}-2)}" th:inline="text">[[${map['pageIndex']}-2]]</a>
-                <a class="pi _j_pageitem" th:if="${map['pageIndex']} gt 1" th:href="@{/homepage/list(pageIndex=${map['pageIndex']}-1)}" th:inline="text">[[${map['pageIndex']}-1]]</a>
+                <a class="pi _j_pageitem" th:if="${map['pageIndex']} gt 3"
+                   th:href="@{/homepage/list(pageIndex=${map['pageIndex']}-3,search=${map['search']})}" th:inline="text">[[${map['pageIndex']}-3]]</a>
+                <a class="pi _j_pageitem" th:if="${map['pageIndex']} gt 2"
+                   th:href="@{/homepage/list(pageIndex=${map['pageIndex']}-2,search=${map['search']})}" th:inline="text">[[${map['pageIndex']}-2]]</a>
+                <a class="pi _j_pageitem" th:if="${map['pageIndex']} gt 1"
+                   th:href="@{/homepage/list(pageIndex=${map['pageIndex']}-1,search=${map['search']})}" th:inline="text">[[${map['pageIndex']}-1]]</a>
                 <span class="pg-current" th:inline="text">[[${map['pageIndex']}]]</span>
-                <a class="pi _j_pageitem" th:if="${map['pageIndex']} lt ${map['totalPage']}-1" th:href="@{/homepage/list(pageIndex=${map['pageIndex']}+1)}" th:inline="text">[[${map['pageIndex']}+1]]</a>
-                <a class="pi _j_pageitem" th:if="${map['pageIndex']} lt ${map['totalPage']}-2" th:href="@{/homepage/list(pageIndex=${map['pageIndex']}+2)}" th:inline="text">[[${map['pageIndex']}+2]]</a>
-                <a class="pi _j_pageitem" th:if="${map['pageIndex']} lt ${map['totalPage']}-3" th:href="@{/homepage/list(pageIndex=${map['pageIndex']}+3)}" th:inline="text">[[${map['pageIndex']}+3]]</a>
+                <a class="pi _j_pageitem" th:if="${map['pageIndex']} lt ${map['totalPage']}-1"
+                   th:href="@{/homepage/list(pageIndex=${map['pageIndex']}+1,search=${map['search']})}" th:inline="text">[[${map['pageIndex']}+1]]</a>
+                <a class="pi _j_pageitem" th:if="${map['pageIndex']} lt ${map['totalPage']}-2"
+                   th:href="@{/homepage/list(pageIndex=${map['pageIndex']}+2,search=${map['search']})}" th:inline="text">[[${map['pageIndex']}+2]]</a>
+                <a class="pi _j_pageitem" th:if="${map['pageIndex']} lt ${map['totalPage']}-3"
+                   th:href="@{/homepage/list(pageIndex=${map['pageIndex']}+3,search=${map['search']})}" th:inline="text">[[${map['pageIndex']}+3]]</a>
                 <!--下一页-->
-                <a class="pg-next _j_pageitem" th:if="${map['pageIndex']} ne ${map['totalPage']}" th:href="@{/homepage/list(pageIndex=${map['pageIndex']}+1)}" >下一页 &gt;&gt;</a>
+                <a class="pg-next _j_pageitem" th:if="${map['pageIndex']} ne ${map['totalPage']}"
+                   th:href="@{/homepage/list(pageIndex=${map['pageIndex']}+1,search=${map['search']})}">下一页 &gt;&gt;</a>
 
                 <!--页面跳转-->
                 <input id="go-input" type="text" th:value="${map['pageIndex']}"/>
                 <a class="pg-next _j_pageitem" id="go">go</a>
                 <script>
                     $('#go').click(function () {
-                        location.href="/homepage/list?pageIndex="+$('#go-input').val();
+                        location.href = "/homepage/list?pageIndex=" + $('#go-input').val()+"&amp;search="+$('#_j_index_search_input_all').val();
                     })
                 </script>
             </div>

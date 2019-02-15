@@ -31,21 +31,25 @@ public class TravelAction {
 
     @ResponseBody
     @GetMapping("/travels/list")
-    public Map<String,Object> find(@RequestParam Integer pageIndex, @RequestParam Integer pageSize) {
+    public Map<String,Object> find(@RequestParam Integer pageIndex, @RequestParam Integer pageSize,@RequestParam String search) {
         Map<String,Object> map = new HashMap<>();
+        //
+        System.out.println(search);
 
         PageDTO pageDTO = new PageDTO();
         pageDTO.setPageIndex(pageIndex);
         pageDTO.setPageSize(pageSize);
-        List<TravelDTO> list = travelService.list(pageDTO);
+        pageDTO.setOffset((pageDTO.getPageIndex()-1)*pageDTO.getPageSize());
+        List<TravelDTO> list = travelService.list(pageDTO,search);
         //各个游记内容
         map.put("travels",list);
-        Long total = travelService.count();
+        Long total = travelService.count(search);
         //共有多少个游记
         map.put("total",total);
         //共有多少页
         int totalPage = (int)Math.ceil(total*1.0 / pageSize);
         //当前页
+        map.put("search",search);
         map.put("pageIndex",pageIndex);
 
         map.put("totalPage",totalPage);

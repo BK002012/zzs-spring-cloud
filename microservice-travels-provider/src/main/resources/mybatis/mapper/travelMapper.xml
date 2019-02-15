@@ -3,15 +3,26 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.ljj.springcloud.dao.TravelDao">
+
     <select id="list" parameterType="com.ljj.springcloud.pojo.dto.PageDTO" resultType="com.ljj.springcloud.pojo.dto.TravelDTO">
         select *
         from travel_notes
+        <where>
+            <if test="search!=null and search!=''">
+                travel_note_title like CONCAT(CONCAT('%', #{search,jdbcType=VARCHAR}),'%')
+            </if>
+        </where>
         limit #{offset},#{pageSize}
     </select>
 
     <select id="count" resultType="java.lang.Long">
         select count(1)
         from travel_notes
+        <where>
+            <if test="search!=null and search!=''">
+                travel_note_title like CONCAT(CONCAT('%', #{search,jdbcType=VARCHAR}),'%')
+            </if>
+        </where>
     </select>
 
     <select id="travel" resultType="com.ljj.springcloud.pojo.dto.TravelDTO">

@@ -31,6 +31,10 @@ public class PageDTO {
     }
 
     public int getOffset() {
-        return (pageIndex - 1)*pageSize;
+        return offset;
+    }
+
+    public void setOffset(int offset) {
+        this.offset = offset;
     }
 }

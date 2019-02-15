@@ -6,9 +6,9 @@ import com.ljj.springcloud.pojo.dto.TravelDTO;
 import java.util.List;
 
 public interface TravelService {
-    List<TravelDTO> list(PageDTO pageDTO);
+    List<TravelDTO> list(PageDTO pageDTO,String search);
 
-    Long count();
+    Long count(String search);
 
     TravelDTO travel(Integer id);
 }
