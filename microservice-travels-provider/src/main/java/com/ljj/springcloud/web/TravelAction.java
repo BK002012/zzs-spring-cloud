@@ -56,18 +56,26 @@ public class TravelAction {
         return map;
     }
 
+    /**
+     * 消息发送方，当收到从client中收到的请求时，发送消息到queue中，item微服务通过监听器收到消息
+     * @param travelNoteId
+     */
     @ResponseBody
     @GetMapping("/travel")
-    public void travelTest() {
-        Integer id = 1;
+    public Map<String,Object> travelTest(@RequestParam("travelNoteId")String travelNoteId) {
+        String id = travelNoteId;
+        Map<String,Object> map = new HashMap<>();
+        map.put("msg","failed");
 
         jmsTemplate.send(topicDestination, new MessageCreator() {
             @Override
             public Message createMessage(Session session) throws JMSException {
-                TextMessage textMessage = session.createTextMessage(id + "");
+                TextMessage textMessage = session.createTextMessage(id);
                 return textMessage;
             }
         });
+        map.put("msg","success");
+        return map;
     }
 
     /**

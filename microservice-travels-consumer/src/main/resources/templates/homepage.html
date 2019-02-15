@@ -419,7 +419,7 @@
                     </div>
                     <div class="search-button" id="_j_index_search_btn_all">
                         <input role="button" class="icon-search" type="submit"/>
-                        <!--<a role="button" href="javascript:"><i class="icon-search"></i></a>-->
+                        <!--<a role="button" href="javascript:"><item class="icon-search"></item></a>-->
                     </div>
                 </form>
             </div>
@@ -621,19 +621,21 @@
 
             <!--游记列表-->
             <div class="tn-selected _j_tag_choose_container" th:each="travel:${map['travels']}">
-                <div class="tn-item clearfix">
+                <!--<input id="travelNoteId" type="hidden" th:value="${travel.travelNoteId}"/>-->
+                <div class="tn-item clearfix" >
                     <div class="tn-image">
                         <a href="#" target="_blank">
                             <img th:src="${travel.travelNoteBanner}"/>
                         </a>
                     </div>
+                    <!--跳转到freemarker-->
                     <div class="tn-wrapper">
                         <dl>
                             <dt>
-                                <a href="/i/8071413.html" target="_blank" th:text="${travel.travelNoteTitle}"></a>
+                                <a th:href="@{/item/menu(travelNoteId=${travel.travelNoteId})}" target="_blank" th:text="${travel.travelNoteTitle}"></a>
                             </dt>
                             <dd>
-                                <a href="/i/8071413.html" target="_blank"
+                                <a th:href="@{/item/menu(${travel.travelNoteId})}" target="_blank"
                                    style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;"
                                    th:text="${travel.travelNoteTitle}">
 
@@ -669,6 +671,7 @@
                     </div>
                 </div>
             </div>
+
             <div align="right" class="m-pagination" id="_j_tn_pagination" data-type="0" data-objid="0"
                  th:switch="${map['pageNum']}">
                 <span class="count" th:inline="text">共[[${map['totalPage']}]]页 / [[${map['total']}]]条</span>
@@ -1225,7 +1228,7 @@
 
             <img src="/homepage/picture/wkgic1t_6tuasybraadgupuhjr021.jpeg" width="450" height="192"/>
         </a>
-        <!--<div class="wx-official-pop"><img src="static/picture/qrcode-weixin.gif"><i class="_j_closeqrcode"></i></div>-->
+        <!--<div class="wx-official-pop"><img src="static/picture/qrcode-weixin.gif"><item class="_j_closeqrcode"></item></div>-->
     </div>
     <div class="toolbar-item-down">
         <a role="button" class="btn _j_gobottom">

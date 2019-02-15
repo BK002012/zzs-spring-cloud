@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ljj.springcloud.dao.TravelContentDao">
+
+    <select id="travelContent" resultType="com.ljj.springcloud.dto.TravelContent">
+        select *
+        from travel_content
+        where travel_note_id=#{travelNoteId}
+    </select>
+</mapper>

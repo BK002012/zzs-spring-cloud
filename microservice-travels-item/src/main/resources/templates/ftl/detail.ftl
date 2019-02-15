@@ -256,6 +256,11 @@
                             <h2 class="t9"><span class="_j_anchor">写在前面的碎碎念</span></h2>
                         </div>
                         <p class="_j_note_content _j_seqitem" data-seq="427306747">
+                            <#list dtolist as l>
+
+                                ${l.travelNoteId}--${l.travelNoteContentText}
+
+                            </#list>
                             2019年1月31日——2月5日期间我一个人自由行，在
                             <a href="/travel-scenic-spot/mafengwo/10132.html" class="link _j_keyword_mdd" data-kw="厦门" target="_blank">厦门</a>
                             、
@@ -804,85 +809,85 @@
 
 
     <div id="pnl_pop_reply"></div>
-    <script id="_j_pnl_pop_reply" type="text/x-jquery-tmpl">
-    <div>
-        <div class="_j_comment_layer">
-                <div class="quoteWrap">
-                    <p class="tit">${title}</p>
-                    <div class="quoteInfo" style="display: ${display};">${word}</div>
-                    <div class="quick_reply_box">
-                        <div class="vc_reply">
-                            <div class="reply_con _j_article_mode _j_editor" id="_j_editor_quote" data-flag="${flag}" data-objid="0" data-link="${link}" data-ajax="1" data-quick="0" data-quote="${word}">
-                                <dl>
-                                    <dt>
-                                        <!--已选择的举牌-->
-                                        <i class="show-selected-give-sign" id="_js_quoteSelectedGiveSign">
-                                            <span class="close-selected-give-sign" id="_js_quoteDeleteShowGiveSign"></span>
-                                        </i>
-                                    <div class="art_title reply_choice">
-                                        <a href="javascript:void(0);" class="expression _j_show_expression" title="选择表情"></a>
-                                        <a href="javascript:void(0);" class="at _j_show_at" title="@他/她"></a>
-                                        <a href="javascript:void(0);" class="give_sign_btn _j_show_tags give_sign_btn _quote_give_sign_btn" title="举牌" style="display: none;"></a>
-                                        <!--<a href="javascript:void(0);" class="tags l17 on" title="举牌">举牌<i></i><span>经验值<strong>+5</strong></span></a>-->
-                                        <div class="clear"></div>
-                                        <div class="art_pop hide">
-                                            <div class="art_pop_title"></div>
-                                            <a href="#" class="exp_close">×</a>
-                                            <i class="art_arrow"></i>
-                                        </div>
-                                        <!--表情弹窗-->
-                                        <div class="art_pop _j_face_pop hide" data-cid="124">
-                                            <div class="art_pop_box art_face">
-                                                <ul class="clearfix">
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <!--@弹层-->
-                                        <div class="art_pop _j_at_pop at_pop hide">
-                                            <div class="at_someone _j_at_pop_box">
-                                                <div class="art_search at_input _j_at_inner">
-                                                    <input type="text" placeholder="请输入用户名号" class="_j_at_txt" value=""/>
-                                                    <ul class="result hide">
-                                                    </ul>
-                                                </div>
-                                                <div class="art_opt">
-                                                    <a href="javascript:void(0);" class="art_submit" title="确定">确定</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--举牌-->
-                                        <div class="art_pop mark_tags _j_tags_pop _j_quick_card_ch give-sign-details small-sign hide" id="_js_quoteGiveSign">
-                                            <p class="give-sign-details-title-section">
-                                                <span class="title">举牌子</span>
-                                                <span class="about-amount">
-                                                    <label>金币 : </label>
-                                                    <span class="amount"></span>
-                                                    <span class="need-amount"></span>
-                                                </span>
-                                            </p>
-                                            <ul class="give-sign-details-list-section small-sign">
-                                            </ul>
-                                        </div>
-                                </div>
-                                <div class="clear"></div>
-                                </dt>
-                                <dd>
-                                    <div class="reply_text">
-                                        <textarea class="_j_replyarea" name="reply_content" cols="30" rows="10"></textarea>
-                                    </div>
-                                </dd>
-                            </dl>
-                            <div class="publish_reply">
-                                <a href="javascript:void(0);" class="btn_big _j_publish_reply" title="回复">回复</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <#--<script id="_j_pnl_pop_reply" type="text/x-jquery-tmpl">-->
+    <#--<div>-->
+        <#--<div class="_j_comment_layer">-->
+                <#--<div class="quoteWrap">-->
+                    <#--<p class="tit">${title}</p>-->
+                    <#--<div class="quoteInfo" style="display: ${display};">${word}</div>-->
+                    <#--<div class="quick_reply_box">-->
+                        <#--<div class="vc_reply">-->
+                            <#--<div class="reply_con _j_article_mode _j_editor" id="_j_editor_quote" data-flag="${flag}" data-objid="0" data-link="${link}" data-ajax="1" data-quick="0" data-quote="${word}">-->
+                                <#--<dl>-->
+                                    <#--<dt>-->
+                                        <#--<!--已选择的举牌&ndash;&gt;-->
+                                        <#--<i class="show-selected-give-sign" id="_js_quoteSelectedGiveSign">-->
+                                            <#--<span class="close-selected-give-sign" id="_js_quoteDeleteShowGiveSign"></span>-->
+                                        <#--</i>-->
+                                    <#--<div class="art_title reply_choice">-->
+                                        <#--<a href="javascript:void(0);" class="expression _j_show_expression" title="选择表情"></a>-->
+                                        <#--<a href="javascript:void(0);" class="at _j_show_at" title="@他/她"></a>-->
+                                        <#--<a href="javascript:void(0);" class="give_sign_btn _j_show_tags give_sign_btn _quote_give_sign_btn" title="举牌" style="display: none;"></a>-->
+                                        <#--<!--<a href="javascript:void(0);" class="tags l17 on" title="举牌">举牌<i></i><span>经验值<strong>+5</strong></span></a>&ndash;&gt;-->
+                                        <#--<div class="clear"></div>-->
+                                        <#--<div class="art_pop hide">-->
+                                            <#--<div class="art_pop_title"></div>-->
+                                            <#--<a href="#" class="exp_close">×</a>-->
+                                            <#--<i class="art_arrow"></i>-->
+                                        <#--</div>-->
+                                        <#--<!--表情弹窗&ndash;&gt;-->
+                                        <#--<div class="art_pop _j_face_pop hide" data-cid="124">-->
+                                            <#--<div class="art_pop_box art_face">-->
+                                                <#--<ul class="clearfix">-->
+                                                <#--</ul>-->
+                                            <#--</div>-->
+                                        <#--</div>-->
+                                        <#--<!--@弹层&ndash;&gt;-->
+                                        <#--<div class="art_pop _j_at_pop at_pop hide">-->
+                                            <#--<div class="at_someone _j_at_pop_box">-->
+                                                <#--<div class="art_search at_input _j_at_inner">-->
+                                                    <#--<input type="text" placeholder="请输入用户名号" class="_j_at_txt" value=""/>-->
+                                                    <#--<ul class="result hide">-->
+                                                    <#--</ul>-->
+                                                <#--</div>-->
+                                                <#--<div class="art_opt">-->
+                                                    <#--<a href="javascript:void(0);" class="art_submit" title="确定">确定</a>-->
+                                                <#--</div>-->
+                                            <#--</div>-->
+                                        <#--</div>-->
+                                        <#--<!--举牌&ndash;&gt;-->
+                                        <#--<div class="art_pop mark_tags _j_tags_pop _j_quick_card_ch give-sign-details small-sign hide" id="_js_quoteGiveSign">-->
+                                            <#--<p class="give-sign-details-title-section">-->
+                                                <#--<span class="title">举牌子</span>-->
+                                                <#--<span class="about-amount">-->
+                                                    <#--<label>金币 : </label>-->
+                                                    <#--<span class="amount"></span>-->
+                                                    <#--<span class="need-amount"></span>-->
+                                                <#--</span>-->
+                                            <#--</p>-->
+                                            <#--<ul class="give-sign-details-list-section small-sign">-->
+                                            <#--</ul>-->
+                                        <#--</div>-->
+                                <#--</div>-->
+                                <#--<div class="clear"></div>-->
+                                <#--</dt>-->
+                                <#--<dd>-->
+                                    <#--<div class="reply_text">-->
+                                        <#--<textarea class="_j_replyarea" name="reply_content" cols="30" rows="10"></textarea>-->
+                                    <#--</div>-->
+                                <#--</dd>-->
+                            <#--</dl>-->
+                            <#--<div class="publish_reply">-->
+                                <#--<a href="javascript:void(0);" class="btn_big _j_publish_reply" title="回复">回复</a>-->
+                            <#--</div>-->
+                        <#--</div>-->
+                    <#--</div>-->
+                <#--</div>-->
+            <#--</div>-->
 
-        </div>
-    </div>
-</script>
+        <#--</div>-->
+    <#--</div>-->
+<#--</script>-->
 
 
 </div>
@@ -1092,7 +1097,7 @@
 
             <img src="/travelDetail/picture/wkgic1t_6tuasybraadgupuhjr021.jpeg" width="450" height="192" />
         </a>
-        <!--<div class="wx-official-pop"><img src="/travelDetail/picture/qrcode-weixin.gif"><i class="_j_closeqrcode"></i></div>-->
+        <!--<div class="wx-official-pop"><img src="/travelDetail/picture/qrcode-weixin.gif"><item class="_j_closeqrcode"></item></div>-->
     </div>
     <div class="toolbar-item-down">
         <a role="button" class="btn _j_gobottom">

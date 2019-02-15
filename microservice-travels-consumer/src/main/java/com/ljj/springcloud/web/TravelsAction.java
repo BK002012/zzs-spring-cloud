@@ -33,4 +33,16 @@ public class TravelsAction {
         return "homepage";
     }
 
+    @GetMapping("/item/menu")
+    public String item(@RequestParam("travelNoteId") String travelNoteId){
+        System.out.println(travelNoteId);
+        restTemplate.getForObject(REST_URL_PREFIX+"/travel?travelNoteId="+travelNoteId,Map.class);
+        return "redirect:/item/"+travelNoteId;
+    }
+
+    @GetMapping("/item/{travelNoteId}")
+    public String item2(@PathVariable("travelNoteId") String travelNoteId){
+        return "item/"+travelNoteId;
+    }
+
 }
