@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ljj.microservicehotelfreemarker.dao.TbHotelDao">
+    <select id="listTbHotel" resultType="com.ljj.microservicehotelfreemarker.pojo.TbHotel">
+    select * from hotel
+    limit #{offset},#{pageCount}
+    </select>
+
+    <select id="listSearchHotel" resultType="com.ljj.microservicehotelfreemarker.pojo.TbHotel">
+        select *
+        from hotel
+        <where>
+            <if test="hotel_name!=null and hotel_name!=''">
+                hotel_name LIKE CONCAT(CONCAT('%',#{hotel_name}),'%')
+            </if>
+        </where>
+        limit #{offset},#{pageCount}
+    </select>
+
+
+    <select id="getCount" resultType="_int">
+        select count(1) from
+        hotel
+    </select>
+    <update id="updateHotel" parameterType="com.ljj.microservicehotelfreemarker.pojo.TbHotel">
+        update hotel
+        set hotel_name=#{hotel_name},hotel_location=#{hotel_location},hotel_rate=#{hotel_rate},hotel_intime=#{hotel_intime},hotel_outtime=#{hotel_outtime},
+        hotel_buildtime=#{hotel_buildtime},hotel_rebuildtime=#{hotel_rebuildtime},hotel_rooms=#{hotel_rooms},
+        main_facility=#{main_facility},hotel_service=#{hotel_service},hotel_facility=#{hotel_facility},room_facility=#{room_facility},hotel_help=#{hotel_help}
+        where hotel_id=#{hotel_id}
+    </update>
+    <delete id="removeHotel">
+        delete from hotel
+        where hotel_id=#{value}
+    </delete>
+    <insert id="addHotel" parameterType="com.ljj.microservicehotelfreemarker.pojo.TbHotel">
+        insert into hotel(hotel_name,hotel_location,hotel_score,hotel_rate,hotel_intime,hotel_outtime,hotel_buildtime,hotel_rebuildtime,hotel_rooms,main_facility,hotel_service,hotel_facility,room_facility,hotel_help,hotel_img,hotel_id)
+        values(#{hotel_name},#{hotel_location},#{hotel_score},#{hotel_rate},#{hotel_intime},#{hotel_outtime},#{hotel_buildtime},#{hotel_rebuildtime},#{hotel_rooms},#{main_facility},#{hotel_service},#{hotel_facility},#{room_facility},#{hotel_help},#{hotel_img},#{hotel_id})
+    </insert>
+    <select id="listSearchHotelAll" parameterType="com.ljj.microservicehotelfreemarker.pojo.HotelSearchVO" resultType="com.ljj.microservicehotelfreemarker.pojo.TbHotel">
+        select * from hotel
+        <where>
+            <if test="hotel_name!=null and hotel_name!=''">
+              hotel_name like CONCAT(CONCAT('%',#{hotel_name}),'%')
+            </if>
+            <if test="hotel_location!=null and hotel_location!=''">
+               and hotel_location like CONCAT(CONCAT('%',#{hotel_location}),'%')
+            </if>
+            <if test="hotel_score!=null and hotel_score!=''">
+               and hotel_score>=#{hotel_score}
+            </if>
+            <if test="hotel_rate!=null and hotel_rate!=''">
+               and hotel_rate>=#{hotel_rate}
+            </if>
+            <if test="hotel_rebuildtime!=null and hotel_rebuildtime!=''">
+               and hotel_rebuildtime like CONCAT(CONCAT('%',#{rebuildtime}),'%')
+            </if>
+            <if test="main_facility!=null and main_facility!=''">
+               and main_facility like #{main_facility}
+            </if>
+            <if test="hotel_service!=null and hotel_service!=''">
+               and hotel_service like #{hotel_service}
+            </if>
+            <if test="hotel_facility!=null and hotel_facility!=''">
+               and hotel_facility like #{hotel_facility}
+            </if>
+            <if test="room_facility!=null and room_facility!=''">
+               and room_facility like #{room_facility}
+            </if>
+        </where>
+        <if test="offset>=0">
+            limit #{offset},#{pageCount}
+        </if>
+    </select>
+    <select id="findHotelById" resultType="com.ljj.microservicehotelfreemarker.pojo.TbHotel">
+        select hotel_name from hotel where hotel_id=5504508
+    </select>
+</mapper>

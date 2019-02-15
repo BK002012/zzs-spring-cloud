@@ -7,6 +7,8 @@ package com.ljj.microservicehotelfreemarker.listener;
  * @version: v1.0
  */
 
+import com.ljj.microservicehotelfreemarker.dao.HotelServiceDao;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Component;
@@ -16,7 +18,6 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class QueueListener {
-
     @JmsListener(destination = "publish.queue", containerFactory = "jmsListenerContainerQueue")
     @SendTo("out.queue")
     public String receive(String text){
