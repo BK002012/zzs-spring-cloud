@@ -28,25 +28,40 @@ spring:
     testOnBorrow: false
     testOnReturn: false
     poolPreparedStatements: true
-#   配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+    #   配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
     filters: stat,wall,log4j
     maxPoolPreparedStatementPerConnectionSize: 20
     useGlobalDataSourceStat: true
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
-#    schema:
-#      - classpath:department.sql
+  #    schema:
+  #      - classpath:department.sql
   application:
     name: travels-provider
     jms:
       pub-sub-domain: true
-  #  activemq地址
+    #  activemq地址
     activemq:
-      broker-url: tcp://47.101.169.146:61616
-  #    是否启用内存模式
+      broker-url: tcp://106.12.210.85:61616
+      #    是否启用内存模式
       in-memory: false
   thymeleaf:
-#    mode: LEGACYHTML5
+    mode: LEGACYHTML5
     cache: false
+  redis:
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: 1500
+#        min-idle: 0
+#        max-idle: 8
+        commandTimeout: 2000
+    thymeleaf:
+      encoding: utf-8
+      cache: false
+    commandTimeout: 5000
+    cluster:
+      nodes: 106.12.210.85:9001,106.12.210.85:9002,106.12.210.85:9003,106.12.210.85:9004,106.12.210.85:9005,106.12.210.85:9006
+    timeout: 0
 
 eureka:
   client:
