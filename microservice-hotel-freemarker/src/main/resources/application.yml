@@ -1,0 +1,24 @@
+server:
+  port: 8092
+spring:
+  activemq:
+    user: admin
+    password: admin
+    broker-url: tcp://106.12.210.85:61616
+    pool:
+      enabled: true
+      max-connections: 10
+  freemarker:
+    allow-request-override: false
+    cache: false
+    check-template-location: true
+    charset: UTF-8
+    content-type: text/html; charset=utf-8
+    expose-request-attributes: false
+    expose-session-attributes: false
+    expose-spring-macro-helpers: false
+    suffix: .ftl
+    template-loader-path: classpath:/templates
+
+queueName: publish.queue
+topicName: hotelDetailFreemarker
