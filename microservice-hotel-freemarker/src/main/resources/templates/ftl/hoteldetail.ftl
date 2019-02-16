@@ -14,9 +14,9 @@
     <meta name="description"
           content="${hotel.hotel_location}${hotel.short_info}"/>
     <meta name="applicable-device" content="pc">
-    <link rel="stylesheet" href="hoteldetail/css/main.1a1e884e.css"/>
+    <link rel="stylesheet" href="/hoteldetail/css/main.1a1e884e.css"/>
     <!--[if lte IE 9]>
-    <script src="hoteldetail/js/html5shiv-printshiv.05f5ae90.js"></script><![endif]-->
+    <script src="/hoteldetail/js/html5shiv-printshiv.05f5ae90.js"></script><![endif]-->
     <link rel="shortcut icon" href="images/favicon/favicon.ico"/>
     <link rel="bookmark" href="images/favicon/favicon.ico" >
     <style type="text/css">
@@ -25,7 +25,7 @@
         }
 
         .p29_0_0 .p29_0_1 .p29_0_2 .p29_0_3 .p29_0_4 .p29_0_5 .p29_0_6 .p29_0_7 .p29_0_8 .p29_0_9 .p29_0_10 {
-            background-image: url('hoteldetail/images/5abc239e7d3243ccaeabf499500d824c.gif');
+            background-image: url('/hoteldetail/images/5abc239e7d3243ccaeabf499500d824c.gif');
             font-size: 27px
         }
 
@@ -85,7 +85,7 @@
         }
 
         .p18_0_0, .p18_1_0, .p18_0_1, .p18_1_1, .p18_0_2, .p18_1_2, .p18_0_3, .p18_1_3, .p18_0_4, .p18_1_4, .p18_0_5, .p18_1_5, .p18_0_6, .p18_1_6, .p18_0_7, .p18_1_7, .p18_0_8, .p18_1_8, .p18_0_9, .p18_1_9, .p18_0_10, .p18_1_10 {
-            background-image: url('hoteldetail/images/fdfafd16ae85461b888da6f638c3be30.gif');
+            background-image: url('/hoteldetail/images/fdfafd16ae85461b888da6f638c3be30.gif');
             font-size: 16px
         }
 
@@ -200,7 +200,7 @@
         }
 
         .p16_0_0, .p16_1_0, .p16_0_1, .p16_1_1, .p16_0_2, .p16_1_2, .p16_0_3, .p16_1_3, .p16_0_4, .p16_1_4, .p16_0_5, .p16_1_5, .p16_0_6, .p16_1_6, .p16_0_7, .p16_1_7, .p16_0_8, .p16_1_8, .p16_0_9, .p16_1_9, .p16_0_10, .p16_1_10 {
-            background-image: url('hoteldetail/images/b6029548eda74c3d805a44a7a2735c6c.gif');
+            background-image: url('/hoteldetail/images/b6029548eda74c3d805a44a7a2735c6c.gif');
             font-size: 15px
         }
 
@@ -315,7 +315,7 @@
         }
 
         .p14_0_0, .p14_0_1, .p14_0_2, .p14_0_3, .p14_0_4, .p14_0_5, .p14_0_6, .p14_0_7, .p14_0_8, .p14_0_9, .p14_0_10 {
-            background-image: url('hoteldetail/images/7941ee68a53347ff9ff19165048efa1a.gif');
+            background-image: url('/hoteldetail/images/7941ee68a53347ff9ff19165048efa1a.gif');
             font-size: 13px
         }
 
@@ -375,7 +375,7 @@
         }
 
         .p12_0_0, .p12_1_0, .p12_0_1, .p12_1_1, .p12_0_2, .p12_1_2, .p12_0_3, .p12_1_3, .p12_0_4, .p12_1_4, .p12_0_5, .p12_1_5, .p12_0_6, .p12_1_6, .p12_0_7, .p12_1_7, .p12_0_8, .p12_1_8, .p12_0_9, .p12_1_9, .p12_0_10, .p12_1_10 {
-            background-image: url('hoteldetail/images/9999363775824ffb8610206211df3973.gif');
+            background-image: url('/hoteldetail/images/9999363775824ffb8610206211df3973.gif');
             font-size: 12px
         }
 
@@ -496,7 +496,7 @@
         <div class="nav-left Lfll Lposr">
             <!--<a class="logo Lfll" href="#" title="蜘蛛丝酒店官网">华住酒店官网</a>-->
             <div style="float: left;margin-top: 10px;width: 100px;">
-                <img src="hoteldetail/images/sprite_logo.png"  height="40px">
+                <img src="/hoteldetail/images/sprite_logo.png"  height="40px">
             </div>
             <div class="Ldib Lposr newnav">
                 <ul class="Lcfx">
@@ -533,11 +533,11 @@
                         <div class="mask"></div>
                         <ul class="Lcfx Ltac popupBox_content">
                             <li class="Lfll huazhuapp">
-                                <img src="hoteldetail/picture/huazhuapp.241130e1.png">
+                                <img src="/hoteldetail/picture/huazhuapp.241130e1.png">
                                 <span>扫一扫APP下载</span>
                             </li>
                             <li class="Lfll huazhuwechat">
-                                <img src="hoteldetail/picture/huazhuwechat.92d0fa88.png">
+                                <img src="/hoteldetail/picture/huazhuwechat.92d0fa88.png">
                                 <span>关注微信</span>
                             </li>
                         </ul>
@@ -636,14 +636,14 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img src="hoteldetail/picture/7598_rs_00_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img src="/hoteldetail/picture/7598_rs_00_p_3000x2250_20181104.jpg.795-450.jpg"
                                              width="795" height="450">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_ro_00_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_ro_00_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -651,7 +651,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_rokga_00_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_rokga_00_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -659,7 +659,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_rokgaef_00_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_rokgaef_00_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -667,7 +667,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_rokgb_00_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_rokgb_00_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -675,7 +675,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_rokgc_00_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_rokgc_00_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -683,7 +683,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_roska_00_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_roska_00_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -691,7 +691,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_roste_00_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_roste_00_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -699,7 +699,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_rotwb_00_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_rotwb_00_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -707,7 +707,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_sm_00_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_sm_00_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -715,7 +715,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_sp_00_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_sp_00_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -723,7 +723,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_ho_01_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_ho_01_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -731,7 +731,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_ro_01_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_ro_01_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -739,7 +739,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_rokgb_01_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_rokgb_01_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -747,7 +747,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_rokgc_01_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_rokgc_01_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -755,7 +755,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_roska_01_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_roska_01_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -763,7 +763,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_roste_01_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_roste_01_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -771,7 +771,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_sm_01_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_sm_01_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -779,7 +779,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_sp_01_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_sp_01_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -787,7 +787,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_ho_02_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_ho_02_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -795,7 +795,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_ro_02_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_ro_02_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -803,7 +803,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_rokgb_02_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_rokgb_02_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -811,7 +811,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_roste_02_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_roste_02_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -819,7 +819,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_rs_02_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_rs_02_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -827,7 +827,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_sm_02_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_sm_02_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -835,7 +835,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_sp_02_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_sp_02_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -843,7 +843,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_ho_03_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_ho_03_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -851,7 +851,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_ro_03_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_ro_03_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -859,7 +859,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_roste_03_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_roste_03_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -867,7 +867,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_rs_03_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_rs_03_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -875,7 +875,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_ho_04_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_ho_04_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -883,7 +883,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_ro_04_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_ro_04_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -891,7 +891,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img data-src="hoteldetail/picture/7598_ho_05_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img data-src="/hoteldetail/picture/7598_ho_05_p_3000x2250_20181104.jpg.795-450.jpg"
                                              src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_795x450.ef662cb3.png"
                                              width="795" height="450">
                                     </a>
@@ -899,7 +899,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img src="hoteldetail/picture/7598_ro_05_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img src="/hoteldetail/picture/7598_ro_05_p_3000x2250_20181104.jpg.795-450.jpg"
                                              width="795" height="450">
                                     </a>
                                 </li>
@@ -909,241 +909,241 @@
                         <ul class="tabCon">
                             <li class="item Lmb5 active">
                                 <a href="javascript:;"></a>
-                                <img src="hoteldetail/picture/7598_ho_00_p_3000x2250_20181104.jpg.140-109.jpg" width="140"
+                                <img src="${hotel.hotel_img}" width="140"
                                      height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img src="hoteldetail/picture/7598_rs_00_p_3000x2250_20181104.jpg.140-109.jpg" width="140"
+                                <img src="/hoteldetail/picture/7598_rs_00_p_3000x2250_20181104.jpg.140-109.jpg" width="140"
                                      height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img src="hoteldetail/picture/7598_ro_00_p_3000x2250_20181104.jpg.140-109.jpg" width="140"
+                                <img src="/hoteldetail/picture/7598_ro_00_p_3000x2250_20181104.jpg.140-109.jpg" width="140"
                                      height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img src="hoteldetail/picture/7598_rokga_00_p_3000x2250_20181104.jpg.140-109.jpg" width="140"
+                                <img src="/hoteldetail/picture/7598_rokga_00_p_3000x2250_20181104.jpg.140-109.jpg" width="140"
                                      height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_rokgaef_00_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_rokgaef_00_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_rokgb_00_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_rokgb_00_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_rokgc_00_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_rokgc_00_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_roska_00_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_roska_00_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_roste_00_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_roste_00_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_rotwb_00_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_rotwb_00_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_sm_00_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_sm_00_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_sp_00_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_sp_00_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_ho_01_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_ho_01_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_ro_01_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_ro_01_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_rokgb_01_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_rokgb_01_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_rokgc_01_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_rokgc_01_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_roska_01_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_roska_01_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_roste_01_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_roste_01_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_sm_01_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_sm_01_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_sp_01_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_sp_01_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_ho_02_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_ho_02_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_ro_02_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_ro_02_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_rokgb_02_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_rokgb_02_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_roste_02_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_roste_02_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_rs_02_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_rs_02_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_sm_02_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_sm_02_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_sp_02_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_sp_02_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_ho_03_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_ho_03_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_ro_03_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_ro_03_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_roste_03_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_roste_03_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_rs_03_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_rs_03_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_ho_04_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_ho_04_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_ro_04_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_ro_04_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_ho_05_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_ho_05_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
                             </li>
                             <li class="item Lmb5 ">
                                 <a href="javascript:;"></a>
-                                <img data-src="hoteldetail/picture/7598_ro_05_p_3000x2250_20181104.jpg.140-109.jpg"
+                                <img data-src="/hoteldetail/picture/7598_ro_05_p_3000x2250_20181104.jpg.140-109.jpg"
                                      src="http://ws-www.hantinghotels.com/newweb/hotels/img/default_pic_140x109.d8bb5aaa.png"
                                      width="140" height="109">
 
@@ -1166,7 +1166,7 @@
                     <h2 data-type="comment" class="link">酒店点评</h2>
                 </div>
             </div>
-            <div data-nblock-id="block/hotelDetailRoom?type=oversea" class="hotelroom_block">
+            <div data-nblock-id="block//hoteldetailRoom?type=oversea" class="hotelroom_block">
                 <div data-nblock-id="ui/checkinDate?offset=0px-5px" data-nblock-auto="true" class="checkin Ltar Lcfx">
                     <div class="timeitem Lfll Lmr30">
                         <span class="Lfll">入住日期</span>
@@ -1225,7 +1225,7 @@
         <div class="Pdetail_international_part3 Lmt20 Pdetail_part3 Lcfx">
             <div class="lbox Lfll">
                 <!-- 酒店交通位置 -->
-                <div id="Pdetail_map" class="Pdetail_map" data-nblock-id="block/hotelDetailMap">
+                <div id="Pdetail_map" class="Pdetail_map" data-nblock-id="block//hoteldetailMap">
                     <h3 class="title"><i class="Cicon small_purulecircle"></i>交通位置</h3>
                     <div class="content">
                         <div class="container Lposr">
@@ -1257,7 +1257,7 @@
                             <span class="label">主要设施</span>
                             <div class="text itembox">
                                 <#list mainfacilitys as facility>
-                                    ${facility}
+                                    <span>${facility}</span>
                                 </#list>
                             </div>
                         </div>
@@ -1265,7 +1265,7 @@
                             <span class="label">酒店服务</span>
                             <div class="text itembox">
                                 <#list services as service>
-                                    ${service}
+                                    <span>${service}</span>
                                 </#list>
                             </div>
                         </div>
@@ -1273,7 +1273,7 @@
                             <span class="label">酒店设施</span>
                             <div class="text itembox">
                                 <#list hotelFacilitys as facility>
-                                    <span>facility</span>
+                                    <span>${facility}</span>
                                 </#list>
                             </div>
                         </div>
@@ -1294,26 +1294,26 @@
 
                         <div class="item">
                             <span class="label">入住和离店</span>
-                            <div class="text itembox"><span>入住时间：14:00:00 以后</span><span>离店时间：12:00:00 以前</span></div>
+                            <div class="text itembox"><span>入住时间:${hotel.hotel_intime} 以后</span><span>离店时间：${hotel.hotel_outtime} 以前</span></div>
                         </div>
 
                         <div class="item">
-                            <span class="label">支付类型</span>
+                            <span class="label">酒店介绍</span>
                             <div class="text itembox">
-                                <span>除接受现金支付外，酒店内接受信用卡支付的种类有：美国运通卡(AE)、万事达卡(Master)、银联卡、大莱卡(Diners)、欧罗卡(Eurocard)、IK MasterCard、日本国际信用卡(JCB)、维萨卡(Visa) </span>
+                                <span>${hotel.short_info}</span>
 
                             </div>
                         </div>
 
                         <div class="item">
-                            <span class="label">儿童政策</span>
-                            <div class="text itembox"><span>最多 1 名 12 岁以下儿童可享受免费住宿和早餐，需与父母同住一间客房（使用现有寝具或者客房拥有足够宽敞的空间可容纳一张婴儿床或一张折叠床），全家共进早餐。</span>
+                            <span class="label">酒店攻略</span>
+                            <div class="text itembox"><span>${hotel.hotel_help}</span>
                             </div>
                         </div>
 
                     </div>
                 </div>
-                <div class="Pdetail_comment Lmt20 Ldn" data-nblock-id="block/hotelDetailComment">
+                <div class="Pdetail_comment Lmt20 Ldn" data-nblock-id="block//hoteldetailComment">
                 </div>
                 <!-- 酒店点评 -->
 
@@ -1336,7 +1336,7 @@
 
 <div class="Cback" data-nblock-id="block/backToTop">
     <div class="backbox Lposr">
-        <div class="scanbox"><img src="hoteldetail/picture/qrcode.c21d2667.png" width="100%" height="100%"><i
+        <div class="scanbox"><img src="/hoteldetail/picture/qrcode.c21d2667.png" width="100%" height="100%"><i
                 class="arrow"></i></div>
         <a class="item scan" href="http://app.huazhu.com" target="_blank"><i class="Cicon middle_scan"></i><span
                 class="txt">下载<br>APP</span></a>
@@ -1359,7 +1359,7 @@
 <footer class="Mfoot">
     <div class="inner Cwrap Lpb25 Lpt25">
         <div class="links Ltac">
-            <a rel="nofollow" href="http://www.huazhu.com/MemberHkh">华住会介绍</a><a rel="nofollow"
+            <a rel="nofollow" href="http://www.huazhu.com/MemberHkh">蜘蛛丝介绍</a><a rel="nofollow"
                                                                                  href="http://www.htinnsjm.com/"
                                                                                  target="_blank">酒店加盟</a><a
                 href="http://zhaopin.huazhu.com" rel="nofollow" target="_blank">职位招聘</a><a rel="nofollow"
@@ -1377,13 +1377,13 @@
     <div data-nblock-id="block/hotelUserInfo"></div>
     <div data-nblock-id="block/trackCompatibleMode"></div>
 
-    <script src="hoteldetail/js/library.3f3920c1.js"></script>
+    <script src="/hoteldetail/js/library.3f3920c1.js"></script>
     <!--[if lte IE 9]>
-    <script src="hoteldetail/js/jquery.placeholder.min.5fbd3e01.js"></script>
+    <script src="/hoteldetail/js/jquery.placeholder.min.5fbd3e01.js"></script>
     <script>$('input, textarea').placeholder({customClass: 'Cplaceholder'});</script>
     <![endif]-->
-    <script src="hoteldetail/js/84345327f7254cfd9d764e8c2ffff52f.js"></script>
-    <script src="hoteldetail/js/common.f7bf4aee.js"></script>
+    <script src="/hoteldetail/js/84345327f7254cfd9d764e8c2ffff52f.js"></script>
+    <script src="/hoteldetail/js/common.f7bf4aee.js"></script>
 
     <script>
         (function () {
@@ -2863,7 +2863,7 @@
         ndoo.vars.GetHotelInfo = "/Basic/GetHotelInfo";
 
         ndoo.vars.isDetail = false;
-        //var html = ndoo.func.renderTemplate('hotelDetailRoomTypeTemplate', ndoo.vars.hotelDetailRoomTypeData);
+        //var html = ndoo.func.renderTemplate('/hoteldetailRoomTypeTemplate', ndoo.vars./hoteldetailRoomTypeData);
         //$('.roomtypebox').html(html);
     </script>
 
@@ -2875,7 +2875,7 @@
         ndoo.vars.memberid = null;
         ndoo.init();
     </script>
-    <script src="hoteldetail/js/huazhu_track.js"></script>
+    <script src="/hoteldetail/js/huazhu_track.js"></script>
 </div>
 </body>
 </html>

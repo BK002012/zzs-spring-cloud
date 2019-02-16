@@ -77,4 +77,7 @@
     <select id="findHotelById" resultType="com.ljj.microservicehotelfreemarker.pojo.TbHotel">
         select * from hotel where hotel_id=#{id}
     </select>
+    <select id="findHotelId" resultType="java.lang.String">
+        select hotel_id from hotel
+    </select>
 </mapper>

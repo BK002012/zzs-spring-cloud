@@ -29,14 +29,6 @@ public class FreemarkerServiceImpl implements FreemarkerService {
     @Autowired
     private TbHotelDao tbHotelDao;
     @Autowired
-    private HotelFacilityDao hotelFacilityDao;
-    @Autowired
-    private MainFacility mainFacility;
-    @Autowired
-    private RoomFacilityDao roomFacilityDao;
-    @Autowired
-    private HotelServiceDao hotelServiceDao;
-    @Autowired
     private FreeMarkerConfigurer freeMarkerConfigurer;
 
     //    根据内容生成模板文件
@@ -66,7 +58,7 @@ public class FreemarkerServiceImpl implements FreemarkerService {
             File file=new File("getabsolute.html");
             String path = file.getAbsolutePath().substring(0, file.getAbsolutePath().lastIndexOf("/"));
             String path2 = path.substring(0, path.lastIndexOf("/"));
-            out = new FileWriter(new File(path2+"/microservice-hotel-freemarker/src/main/resources/templates/"+id+".html"));
+            out = new FileWriter(new File(path2+"/microservice-hotel-freemarker/src/main/resources/templates/ftl_html/"+id+".html"));
             //将测试的文件删除
             if(file.exists()){
                 file.delete();

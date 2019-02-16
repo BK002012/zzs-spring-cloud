@@ -30,5 +30,6 @@ public interface TbHotelDao {
 //    List<TbHotel> listSearchHotelAll(@Param("hotel")TbHotel hotel,@Param("offset")int offset, @Param("pageCount")int pageCount);
     List<TbHotel> listSearchHotelAll(HotelSearchVO tbHotel);
     TbHotel findHotelById(@Param("id")int id);
+    List<String> findHotelId();
 }
 

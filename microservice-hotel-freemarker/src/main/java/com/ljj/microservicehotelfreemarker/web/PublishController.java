@@ -8,6 +8,7 @@ package com.ljj.microservicehotelfreemarker.web;
  */
 
 import com.ljj.microservicehotelfreemarker.service.FreemarkerService;
+import com.ljj.microservicehotelfreemarker.service.GeneralAllPageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.jms.core.JmsMessagingTemplate;
@@ -37,6 +38,9 @@ public class PublishController {
 
     @Autowired
     private FreemarkerService freemarkerService;
+
+    @Autowired
+    private GeneralAllPageService generalAllPageService;
 
     @RequestMapping("/queue")
     public String queue(){
@@ -71,5 +75,10 @@ public class PublishController {
             return "message:"+id;
         }*/
         return "message:success";
+    }
+    @GetMapping("generalAllPage")
+    public String generalPage(){
+        int i = generalAllPageService.GeneralPages();
+        return "success";
     }
 }
