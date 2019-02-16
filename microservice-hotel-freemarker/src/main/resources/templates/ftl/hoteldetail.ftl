@@ -9,10 +9,10 @@
     <meta charset="UTF-8">
     <meta name="baidu-site-verification" content="VDqK0X1nVn"/>
     <meta name="renderer" content="webkit">
-    <title>上海静安铂尔曼酒店预订价格_位置地址_电话 - 华住酒店官网</title>
-    <meta name="keywords" content="上海静安铂尔曼酒店预订价格，上海静安铂尔曼酒店地址,上海静安铂尔曼酒店预订电话"/>
+    <title>${hotel.hotel_name}</title>
+    <meta name="keywords" content="${hotel.hotel_name}"/>
     <meta name="description"
-          content="上海静安铂尔曼酒店位于静安区梅园路330号, 上海, 中国,联系电话：86/21/63535555,为您提供酒店宾馆预订服务,涵盖上海静安铂尔曼酒店预订价格、联系电话、服务设施、地址交通及周边酒店信息,更多信息访问华住酒店官网。"/>
+          content="${hotel.hotel_location}${hotel.short_info}"/>
     <meta name="applicable-device" content="pc">
     <link rel="stylesheet" href="hoteldetail/css/main.1a1e884e.css"/>
     <!--[if lte IE 9]>
@@ -494,7 +494,7 @@
 <div class="newCommonHeader Lposr">
     <div class="Cwrap Lcfx">
         <div class="nav-left Lfll Lposr">
-            <!--<a class="logo Lfll" href="#" title="华住酒店官网">华住酒店官网</a>-->
+            <!--<a class="logo Lfll" href="#" title="蜘蛛丝酒店官网">华住酒店官网</a>-->
             <div style="float: left;margin-top: 10px;width: 100px;">
                 <img src="hoteldetail/images/sprite_logo.png"  height="40px">
             </div>
@@ -604,14 +604,14 @@
         <div class="Cdir">
             <a href="http://www.huazhu.com/"><i class="Cicon small_home"></i>首页</a><span class="next">&gt;</span>
             <a href="/IntHotel">酒店</a><span class="next">&gt;</span>
-            <span>上海静安铂尔曼酒店</span>
+            <span>${hotel.hotel_name}</span>
         </div>
         <div class="Pdetail_part1 Pdetail_international_part1" id="Pdetail_part1">
             <div class="Lcfx">
                 <div class="Lfll hotelname">
                     <h3 class="en">Pullman Shanghai Jing An</h3>
-                    <h3 class="zh">上海静安铂尔曼酒店</h3>
-                    <div class="address">静安区梅园路330号, 上海, 中国</div>
+                    <h3 class="zh">${hotel.hotel_name}</h3>
+                    <div class="address">${hotel.hotel_location}</div>
                 </div>
                 <div class="Lflr hotellogo"><span class="overseabrandlogo overseabrandlogo-PUL"></span></div>
                 <div class="Lflr Ltar hotelfavorstar">
@@ -629,7 +629,7 @@
                                 <li>
                                     <a href="javascript:;">
 
-                                        <img src="hoteldetail/picture/7598_ho_00_p_3000x2250_20181104.jpg.795-450.jpg"
+                                        <img src="${hotel.hotel_img}"
                                              width="795" height="450">
                                     </a>
                                 </li>
@@ -1246,9 +1246,7 @@
                 <!-- 酒店介绍 -->
                 <div class="Pdetail_introduction Lmt20 Pdetail_basicinfo">
                     <h3 class="title"><i class="Cicon small_purulecircle"></i>酒店介绍</h3>
-                    <div class="content Lovh Lposr">上海静安铂尔曼酒店拥有 288
-                        间客房和套房，酒店将宾客的舒适和健康视为首要责任，每间客房和套房都设施齐全，宛若舒适的天堂，客房配有全尺寸落地式玻璃墙，可欣赏广阔的城市美景，设有全尺寸办公桌、42
-                        英寸的纯平电视、精美的洗浴用品和瑞雨淋浴、豪华寝具和 400 纱支密度的床上用品。
+                    <div class="content Lovh Lposr">${hotel.hotel_name}&nbsp;${hotel.hotel_location}&nbsp;${hotel.short_info}
                         <!--<a href="javascirpt:;" class="more">查看更多<i class="arrow"></i></a>--></div>
                 </div>
                 <!-- 酒店设施 -->
@@ -1256,44 +1254,35 @@
                     <h3 class="title"><i class="Cicon small_purulecircle"></i>酒店设施</h3>
                     <div class="content Lovh">
                         <div class="item">
-                            <span class="label">基本设施</span>
+                            <span class="label">主要设施</span>
                             <div class="text itembox">
-                                <span>停车场(收费)</span>
-                                <span>桑拿浴</span>
-                                <span>行李员</span>
-                                <span>换汇</span>
-                                <span>秘书服务</span>
-                                <span>220伏交流电</span>
-                                <span>高速网络</span>
-                                <span>餐厅</span>
-                                <span>保险箱</span>
-                                <span>快速登记</span>
-                                <span>快速结账</span>
-                                <span>24小时前台</span>
-                                <span>健美中心</span>
-                                <span>电梯</span>
-                                <span>多语种员工</span>
-                                <span>自动提款机</span>
-                                <span>室外停车场(收费)</span>
-                                <span>按摩</span>
+                                <#list mainfacilitys as facility>
+                                    ${facility}
+                                </#list>
                             </div>
                         </div>
                         <div class="item">
-                            <span class="label">安全设施</span>
+                            <span class="label">酒店服务</span>
                             <div class="text itembox">
-                                <span>房间的应急信息</span>
-                                <span>紧急出口地图</span>
-                                <span>应急照明</span>
-                                <span>房间消防系统</span>
+                                <#list services as service>
+                                    ${service}
+                                </#list>
                             </div>
                         </div>
                         <div class="item">
-                            <span class="label">商务设施</span>
+                            <span class="label">酒店设施</span>
                             <div class="text itembox">
-                                <span>秘书服务</span>
-                                <span>复印机</span>
-                                <span>电脑租赁</span>
-                                <span>传真机</span>
+                                <#list hotelFacilitys as facility>
+                                    <span>facility</span>
+                                </#list>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="label">房间设施</span>
+                            <div class="text itembox">
+                                <#list roomFacilitys as facility>
+                                    ${facility}
+                                </#list>
                             </div>
                         </div>
                     </div>

@@ -21,6 +21,6 @@ public class mybatis {
     @Test
     public void test(){
         System.out.println(tbHotelDao.findHotelById(5504508));
-        System.out.println(tbHotelDao.listTbHotel(0,100));
+//        System.out.println(tbHotelDao.listTbHotel(0,100));
     }
 }

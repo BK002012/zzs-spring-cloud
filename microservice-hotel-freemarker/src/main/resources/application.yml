@@ -8,6 +8,9 @@ spring:
     pool:
       enabled: true
       max-connections: 10
+  thymeleaf:
+    mode: LEGACYHTML5
+    cache: false
   freemarker:
     allow-request-override: false
     cache: false
@@ -22,7 +25,7 @@ spring:
   datasource:
     username: root
     password: xie123
-    url: jdbc:mysql://47.106.135.243:3306/silk?characterEncoding=utf8
+    url: jdbc:mysql://47.106.135.243:3306/silk?useUnicode=true&characterEncoding=utf8
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
 queueName: publish.queue

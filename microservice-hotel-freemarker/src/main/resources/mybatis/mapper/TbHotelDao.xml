@@ -75,6 +75,6 @@
         </if>
     </select>
     <select id="findHotelById" resultType="com.ljj.microservicehotelfreemarker.pojo.TbHotel">
-        select hotel_name from hotel where hotel_id=5504508
+        select * from hotel where hotel_id=#{id}
     </select>
 </mapper>

@@ -11,6 +11,7 @@ import com.ljj.microservicehotelfreemarker.service.FreemarkerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.jms.core.JmsMessagingTemplate;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -63,10 +64,12 @@ public class PublishController {
     }
     @RequestMapping("/hoteldetail/{id}")
     public String sendMessageFreemarker(@PathVariable("id")int id){
-        Boolean generalPageByFtl = freemarkerService.generalPageByFtl(id);
+//        发送一个topic的消息通知生成静态页的service
+        jms.convertAndSend(topic,id);
+       /* Boolean generalPageByFtl = freemarkerService.generalPageByFtl(id);
         if (generalPageByFtl==true){
             return "message:"+id;
-        }
-        return "message:error";
+        }*/
+        return "message:success";
     }
 }
